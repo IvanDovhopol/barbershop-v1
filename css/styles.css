@@ -30,6 +30,10 @@ body {
   text-decoration: none;
 }
 
+.contener {
+  padding: 15px;
+}
+
 /* ----------------------------- header -----------------------------*/
 .header {
   background-color: #191c26;
@@ -78,6 +82,8 @@ body {
   letter-spacing: 0.1em;
   text-transform: uppercase;
   color: var(--top-text-secondary-color);
+  padding-bottom: 20px;
+  margin-bottom: 0;
 }
 .hero-title {
   font-family: "Raleway";
@@ -86,12 +92,16 @@ body {
   line-height: 1.18;
   letter-spacing: 0.05em;
   color: var(--title-secondary-color);
+  padding-bottom: 20px;
+  margin: 0;
 }
 .hero-slogan {
   font-size: 18px;
   line-height: 30px;
   letter-spacing: 0.02em;
   color: #9da4bd;
+  padding-bottom: 0;
+  margin-bottom: 0;
 }
 
 .hero-link {
@@ -114,6 +124,8 @@ body {
   line-height: 1.36;
   letter-spacing: 0.1em;
   text-transform: uppercase;
+  padding-bottom: 20px;
+  margin: 0;
 }
 .about-title {
   font-family: var(--font-secondary);
@@ -121,18 +133,24 @@ body {
   font-size: 42px;
   line-height: 1.16;
   letter-spacing: 0.05em;
+  padding-bottom: 20px;
+  margin: 0;
 }
 .about-slogan {
   font-size: 18px;
   line-height: 1.66;
   letter-spacing: 0.02em;
   color: var(--primory-text-color);
+  padding-bottom: 20px;
+  margin: 0;
 }
 .about-desc {
   font-size: 14px;
   line-height: 1.85;
   letter-spacing: 0.02em;
   color: var(--primory-text-color);
+  padding-bottom: 40px;
+  margin: 0;
 }
 .about-button {
   font-family: "Open Sans";
@@ -166,6 +184,8 @@ body {
   letter-spacing: 0.1em;
   text-transform: uppercase;
   color: var(--top-text-secondary-color);
+  padding-bottom: 20px;
+  margin: 0;
 }
 
 .price-title {
@@ -210,6 +230,8 @@ body {
   font-size: 42px;
   line-height: 1.35;
   letter-spacing: 0.05em;
+  margin: 0;
+  padding-bottom: 8px;
 }
 .stats-text-item {
   font-weight: 600;
@@ -222,6 +244,8 @@ body {
   line-height: 1.36;
   letter-spacing: 0.1em;
   text-transform: uppercase;
+  padding-bottom: 20px;
+  margin: 0;
 }
 .stats-title {
   font-family: var(--font-secondary);
@@ -229,12 +253,16 @@ body {
   font-size: 42px;
   line-height: 1.16;
   letter-spacing: 0.05em;
+  padding-bottom: 20px;
+  margin: 0;
 }
 .stats-slogan {
   font-size: 18px;
   line-height: 1.66;
   letter-spacing: 0.02em;
   color: var(--primory-text-color);
+  padding-bottom: 0;
+  margin: 0;
 }
 
 /* ---------------------------- masters ----------------------------*/
@@ -247,6 +275,8 @@ body {
   line-height: 1.36;
   letter-spacing: 0.1em;
   text-transform: uppercase;
+  margin: 0;
+  padding-bottom: 20px;
 }
 .masters-tltle {
   font-family: var(--font-secondary);
@@ -254,18 +284,25 @@ body {
   font-size: 42px;
   line-height: 1.16;
   letter-spacing: 0.05em;
+  margin: 0;
+  padding-bottom: 0;
 }
 
 .masters-subtitle {
   font-size: 18px;
   line-height: 1.38;
   letter-spacing: 0.02em;
+  padding-bottom: 8px;
+  margin: 0;
 }
+
 .masters-text-item {
   font-size: 14px;
   line-height: 1.35;
   letter-spacing: 0.02em;
   color: var(--accent-color);
+  padding: 0;
+  margin: 0;
 }
 
 /* ---------------------------- portfolio ----------------------------*/
@@ -333,6 +370,13 @@ body {
   line-height: 1.16;
   letter-spacing: 0.05em;
   color: var(--title-secondary-color);
+  padding-bottom: 40px;
+  margin: 0;
+}
+
+.contacts-list {
+  padding: 0;
+  margin: 0;
 }
 
 .contacts-link {
