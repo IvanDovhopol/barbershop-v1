@@ -15,8 +15,42 @@
   --accent-color: #ff6c00;
   --registration-text-color: rgba(157, 164, 189, 0.4);
   --font-secondary: "Raleway", sans-serif;
+  --repeat-margin: 20px;
 }
 
+/* ---------- reset ------------- */
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+ul {
+  margin: 0;
+  padding-left: 0;
+}
+
+img {
+  display: block;
+}
+
+button {
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.33;
+  letter-spacing: 0.09em;
+  border: 1px solid #ff6c00;
+  border-radius: 25px;
+  padding: 12px 20px;
+  text-transform: uppercase;
+}
+
+/* -------------- body -------------- */
 body {
   font-family: "Open Sans", sans-serif;
   color: var(--secondary-text-color);
@@ -30,13 +64,33 @@ body {
   text-decoration: none;
 }
 
-.contener {
-  padding: 15px;
+.title {
+  font-family: var(--font-secondary);
+  letter-spacing: 0.05em;
+  line-height: 1.16;
+}
+
+.text {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  outline: 1px solid teal;
 }
 
 /* ----------------------------- header -----------------------------*/
 .header {
-  background-color: #191c26;
+  background-color: #9da4bd;
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 .header-link {
   color: var(--header-link-color);
@@ -52,18 +106,8 @@ body {
 }
 
 .header-button {
-  font-family: inherit;
-  color: var(--button-text-primory-color);
-  font-weight: 600;
-  font-size: 12px;
-  line-height: 1.33;
-  letter-spacing: 0.09em;
-  text-transform: uppercase;
-  cursor: pointer;
-  border: 1px solid #ff6c00;
-  border-radius: 25px;
-  padding: 12px 20px;
   background-color: #191c26;
+  color: var(--button-text-primory-color);
 }
 
 .header-button:hover {
@@ -72,43 +116,35 @@ body {
 }
 
 /* ----------------------------- hero -----------------------------*/
-.hero {
+.hero-content {
   background-color: #191c26;
+  padding: 271px 100px 207px;
 }
+
 .hero-text-top {
-  font-weight: 600;
-  font-size: 11px;
-  line-height: 1.36;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
   color: var(--top-text-secondary-color);
-  padding-bottom: 20px;
-  margin-bottom: 0;
+  margin-bottom: var(--repeat-margin);
 }
 .hero-title {
-  font-family: "Raleway";
-  font-weight: 700;
   font-size: 72px;
   line-height: 1.18;
-  letter-spacing: 0.05em;
   color: var(--title-secondary-color);
-  padding-bottom: 20px;
-  margin: 0;
+  margin-bottom: var(--repeat-margin);
 }
+
 .hero-slogan {
   font-size: 18px;
-  line-height: 30px;
+  line-height: 1.66;
   letter-spacing: 0.02em;
   color: #9da4bd;
-  padding-bottom: 0;
-  margin-bottom: 0;
+  max-width: 400px;
 }
 
 .hero-link {
   font-weight: 600;
   font-size: 11px;
   line-height: 1.36;
-  letter-spacing: 0.2em;
+  letter-spacing: 0.02em;
   color: var(--hero-link-color);
 }
 
@@ -118,51 +154,34 @@ body {
 }
 
 /* ----------------------------- about -----------------------------*/
+.about {
+  background-color: #dcdcdc;
+  padding-top: 164px;
+  padding-bottom: 89px;
+}
+
 .about-text-top {
-  font-weight: 600;
-  font-size: 11px;
-  line-height: 1.36;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-  padding-bottom: 20px;
-  margin: 0;
+  margin-bottom: var(--repeat-margin);
 }
 .about-title {
-  font-family: var(--font-secondary);
-  font-weight: 700;
   font-size: 42px;
-  line-height: 1.16;
-  letter-spacing: 0.05em;
-  padding-bottom: 20px;
-  margin: 0;
+  margin-bottom: var(--repeat-margin);
 }
 .about-slogan {
   font-size: 18px;
   line-height: 1.66;
   letter-spacing: 0.02em;
   color: var(--primory-text-color);
-  padding-bottom: 20px;
-  margin: 0;
+  margin-bottom: var(--repeat-margin);
 }
 .about-desc {
   font-size: 14px;
   line-height: 1.85;
   letter-spacing: 0.02em;
   color: var(--primory-text-color);
-  padding-bottom: 40px;
-  margin: 0;
+  margin-bottom: 40px;
 }
 .about-button {
-  font-family: "Open Sans";
-  font-weight: 600;
-  font-size: 12px;
-  line-height: 1.33;
-  letter-spacing: 0.09em;
-  text-transform: uppercase;
-  cursor: pointer;
-  border: 1px solid #ff6c00;
-  border-radius: 25px;
-  padding: 12px 20px;
   background-color: #ffffff;
   color: var(--button-text-secondary-color);
 }
@@ -175,25 +194,33 @@ body {
 /* ----------------------------- price -----------------------------*/
 .price {
   background-color: #191c26;
+  padding-top: 130px;
+  padding-bottom: 130px;
 }
 
 .price-text-top {
-  font-weight: 600;
-  font-size: 11px;
-  line-height: 1.36;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
   color: var(--top-text-secondary-color);
-  padding-bottom: 20px;
-  margin: 0;
+  margin-bottom: var(--repeat-margin);
 }
 
 .price-title {
-  font-weight: 700;
   font-size: 42px;
-  line-height: 1.16;
-  letter-spacing: 0.05em;
   color: var(--title-secondary-color);
+  margin-bottom: 44px;
+}
+
+.price-list-left {
+  outline: 1px dotted red;
+  padding: 30px 40px;
+}
+
+.price-list-right {
+  outline: 1px dotted green;
+  padding: 30px 40px;
+}
+
+.price-item {
+  margin-bottom: var(--repeat-margin);
 }
 
 .price-text-item {
@@ -204,16 +231,9 @@ body {
 }
 
 .price-button {
-  font-family: "Open Sans";
-  font-weight: 600;
-  font-size: 12px;
-  line-height: 1.33;
-  letter-spacing: 0.09em;
-  text-transform: uppercase;
-  cursor: pointer;
-  border: 1px solid #ff6c00;
-  border-radius: 25px;
-  padding: 12px 20px;
+  display: block;
+  margin: 0 auto;
+  margin-top: 50px;
   background-color: #191c26;
   color: var(--button-text-primory-color);
 }
@@ -225,75 +245,69 @@ body {
 
 /* ----------------------------- stats -----------------------------*/
 
+.stats {
+  background-color: #f0ffff;
+  padding-top: 143px;
+  padding-bottom: 137px;
+}
+
+.stats-item {
+  width: 170px;
+  height: 133px;
+  padding: 20px 24px;
+  outline: 1px solid blue;
+}
+
 .stats-numbers {
   font-weight: 700;
   font-size: 42px;
   line-height: 1.35;
   letter-spacing: 0.05em;
-  margin: 0;
-  padding-bottom: 8px;
+  text-align: center;
+  display: block;
+  margin-bottom: 6px;
 }
 .stats-text-item {
   font-weight: 600;
   font-size: 11px;
   line-height: 1.36;
+  text-align: center;
 }
+
 .stats-text-top {
-  font-weight: 600;
-  font-size: 11px;
-  line-height: 1.36;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-  padding-bottom: 20px;
-  margin: 0;
+  margin-bottom: var(--repeat-margin);
 }
 .stats-title {
-  font-family: var(--font-secondary);
-  font-weight: 700;
   font-size: 42px;
-  line-height: 1.16;
-  letter-spacing: 0.05em;
-  padding-bottom: 20px;
-  margin: 0;
+  margin-bottom: var(--repeat-margin);
 }
 .stats-slogan {
   font-size: 18px;
   line-height: 1.66;
   letter-spacing: 0.02em;
   color: var(--primory-text-color);
-  padding-bottom: 0;
-  margin: 0;
 }
 
 /* ---------------------------- masters ----------------------------*/
 .masters {
+  padding-top: 130px;
+  padding-bottom: 130px;
   background-color: #f7f7f7;
 }
 .masters-text-top {
-  font-weight: 600;
-  font-size: 11px;
-  line-height: 1.36;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-  margin: 0;
-  padding-bottom: 20px;
+  margin-bottom: var(--repeat-margin);
 }
 .masters-tltle {
-  font-family: var(--font-secondary);
-  font-weight: 700;
   font-size: 42px;
-  line-height: 1.16;
-  letter-spacing: 0.05em;
-  margin: 0;
-  padding-bottom: 0;
+  margin-bottom: 44px;
 }
 
 .masters-subtitle {
   font-size: 18px;
   line-height: 1.38;
   letter-spacing: 0.02em;
-  padding-bottom: 8px;
-  margin: 0;
+  margin-bottom: 8px;
+  margin-top: 30px;
 }
 
 .masters-text-item {
@@ -301,18 +315,18 @@ body {
   line-height: 1.35;
   letter-spacing: 0.02em;
   color: var(--accent-color);
-  padding: 0;
-  margin: 0;
 }
 
 /* ---------------------------- portfolio ----------------------------*/
 
+.portfolio {
+  padding-top: 130px;
+  padding-bottom: 130px;
+  background-color: #ffe4e1;
+}
+
 .portfolio-text-top {
-  font-weight: 600;
-  font-size: 11px;
-  line-height: 1.36;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
+  margin-bottom: 44px;
 }
 .portfolio-title {
   position: absolute;
@@ -329,26 +343,15 @@ body {
 
 /* ---------------------------- registration ----------------------------*/
 .registration {
+  padding-top: 130px;
+  padding-bottom: 193px;
   background-color: #191c26;
 }
 .registration-title {
-  font-family: var(--font-secondary);
-  font-weight: 700;
   font-size: 42px;
-  line-height: 1.16;
-  letter-spacing: 0.05em;
   color: var(--title-secondary-color);
 }
 .registration-button {
-  font-family: "Open Sans";
-  font-weight: 600;
-  font-size: 12px;
-  line-height: 1.33;
-  letter-spacing: 0.09em;
-  text-transform: uppercase;
-  cursor: pointer;
-  border: 1px solid #ff6c00;
-  border-radius: 25px;
   padding: 12px 38px;
   background-color: #191c26;
   color: var(--button-text-primory-color);
@@ -361,22 +364,18 @@ body {
 
 /* ---------------------------- contacts ----------------------------*/
 .contacts {
-  background-color: #191c26;
+  padding-top: 130px;
+  padding-bottom: 130px;
+  background-color: #191c20;
 }
 .contacts-title {
-  font-family: "Raleway";
-  font-weight: 700;
   font-size: 42px;
-  line-height: 1.16;
-  letter-spacing: 0.05em;
   color: var(--title-secondary-color);
-  padding-bottom: 40px;
-  margin: 0;
+  margin-bottom: 40px;
 }
 
 .contacts-list {
-  padding: 0;
-  margin: 0;
+  padding-bottom: 70px;
 }
 
 .contacts-link {
@@ -385,6 +384,7 @@ body {
   letter-spacing: 0.02em;
   color: var(--contact-text-color);
   font-style: normal;
+  margin-bottom: var(--repeat-margin);
 }
 
 .contacts-link:hover,
@@ -397,12 +397,8 @@ body {
 }
 
 .contacts-text-time {
-  font-weight: 600;
-  font-size: 11px;
-  line-height: 1.36;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
   color: var(--title-secondary-color);
+  margin-bottom: var(--repeat-margin);
 }
 .contacts-slogan {
   font-size: 18px;
@@ -419,7 +415,7 @@ body {
   font-weight: 600;
   font-size: 11px;
   line-height: 1.36;
-  letter-spacing: 0.2em;
+  letter-spacing: 0.02em;
   color: #9da4bd;
 }
 
@@ -427,7 +423,7 @@ body {
   font-weight: 600;
   font-size: 11px;
   line-height: 1.36;
-  letter-spacing: 0.2em;
+  letter-spacing: 0.02em;
   color: var(--footer-link-color);
 }
 
