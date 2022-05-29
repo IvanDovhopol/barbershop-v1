@@ -86,12 +86,30 @@ body {
   outline: 1px solid teal;
 }
 
-/* ----------------------------- header -----------------------------*/
+/* ----------------------------- HEADER -----------------------------*/
 .header {
   background-color: #9da4bd;
   padding-top: 32px;
   padding-bottom: 32px;
 }
+
+.header .container {
+  display: flex;
+  align-items: center;
+}
+
+.header-logo {
+  margin-right: 70px;
+}
+
+.header-list {
+  display: flex;
+}
+
+.header-item:not(:last-child) {
+  margin-right: 40px;
+}
+
 .header-link {
   color: var(--header-link-color);
   font-weight: 600;
@@ -105,20 +123,35 @@ body {
   color: var(--accent-color);
 }
 
+.header-connect {
+  margin-left: auto;
+}
+
 .header-button {
-  background-color: #191c26;
+  min-width: 160px;
+  height: 40px;
+  margin-left: 40px;
+  background-color: transparent;
   color: var(--button-text-primory-color);
 }
 
 .header-button:hover {
-  background-color: #fff;
-  color: #303030;
+  background-color: var(--accent-color);
 }
 
-/* ----------------------------- hero -----------------------------*/
+/* ----------------------------- HERO -----------------------------*/
+.hero .container {
+  display: flex;
+}
+
+.hero-list {
+  width: 90px;
+}
+
 .hero-content {
   background-color: #191c26;
   padding: 271px 100px 207px;
+  flex-grow: 1;
 }
 
 .hero-text-top {
@@ -153,11 +186,27 @@ body {
   color: var(--accent-color);
 }
 
-/* ----------------------------- about -----------------------------*/
+/* ----------------------------- ABOUT -----------------------------*/
 .about {
   background-color: #dcdcdc;
   padding-top: 164px;
   padding-bottom: 89px;
+}
+
+.about .container {
+  display: flex;
+}
+
+.about-list {
+  display: flex;
+  margin-right: 64px;
+}
+
+.about-item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.about-content {
 }
 
 .about-text-top {
@@ -182,16 +231,16 @@ body {
   margin-bottom: 40px;
 }
 .about-button {
-  background-color: #ffffff;
+  background-color: transparent;
   color: var(--button-text-secondary-color);
 }
 
 .about-button:hover {
-  background-color: #191c26;
+  background-color: var(--accent-color);
   color: #ffffff;
 }
 
-/* ----------------------------- price -----------------------------*/
+/* ----------------------------- PRICE -----------------------------*/
 .price {
   background-color: #191c26;
   padding-top: 130px;
@@ -234,16 +283,15 @@ body {
   display: block;
   margin: 0 auto;
   margin-top: 50px;
-  background-color: #191c26;
+  background-color: transparent;
   color: var(--button-text-primory-color);
 }
 
 .price-button:hover {
-  background-color: #ffffff;
-  color: #303030;
+  background-color: var(--accent-color);
 }
 
-/* ----------------------------- stats -----------------------------*/
+/* ----------------------------- STATS -----------------------------*/
 
 .stats {
   background-color: #f0ffff;
@@ -288,7 +336,7 @@ body {
   color: var(--primory-text-color);
 }
 
-/* ---------------------------- masters ----------------------------*/
+/* ---------------------------- MASTERS ----------------------------*/
 .masters {
   padding-top: 130px;
   padding-bottom: 130px;
@@ -317,7 +365,7 @@ body {
   color: var(--accent-color);
 }
 
-/* ---------------------------- portfolio ----------------------------*/
+/* ---------------------------- PORTFOLIO ----------------------------*/
 
 .portfolio {
   padding-top: 130px;
@@ -341,7 +389,7 @@ body {
   margin: -1px;
 }
 
-/* ---------------------------- registration ----------------------------*/
+/* ---------------------------- REGISTRATION ----------------------------*/
 .registration {
   padding-top: 130px;
   padding-bottom: 193px;
@@ -353,16 +401,15 @@ body {
 }
 .registration-button {
   padding: 12px 38px;
-  background-color: #191c26;
+  background-color: transparent;
   color: var(--button-text-primory-color);
 }
 
 .registration-button:hover {
-  background-color: #ffffff;
-  color: #303030;
+  background-color: var(--accent-color);
 }
 
-/* ---------------------------- contacts ----------------------------*/
+/* ---------------------------- CONTACTS ----------------------------*/
 .contacts {
   padding-top: 130px;
   padding-bottom: 130px;
@@ -407,7 +454,7 @@ body {
   color: var(--contact-text-color);
 }
 
-/* ---------------------------- footer ----------------------------*/
+/* ---------------------------- FOOTER ----------------------------*/
 .footer {
   background-color: #f7f7f7;
 }
