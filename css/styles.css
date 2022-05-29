@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /* 'Open Sans', sans-serif */
 /* 'Raleway', sans-serif */
 
@@ -33,25 +34,108 @@
   --secondary-text-color: #555555;
   --primary-slogan-color: #555555;
   --masters-speciality-text-color: #ff6c00;
+=======
+:root {
+  --primory-text-color: #555555;
+  --secondary-text-color: #303030;
+  --price-text-color: #9da4bd;
+  --contact-text-color: #9da4bd;
+  --top-text-primory-color: #303030;
+  --top-text-secondary-color: rgba(157, 164, 189, 0.6);
+  --button-text-primory-color: #ffffff;
+  --button-text-secondary-color: #303030;
+  --title-primory-color: #303030;
+  --title-secondary-color: #ffffff;
+  --header-link-color: #ffffff;
+  --hero-link-color: #303030;
+  --footer-link-color: #303030;
+>>>>>>> ad54d5047037b2e3888b0b2858c596366ee5ea15
   --accent-color: #ff6c00;
+  --registration-text-color: rgba(157, 164, 189, 0.4);
+  --font-secondary: "Raleway", sans-serif;
+  --repeat-margin: 20px;
 }
 
+<<<<<<< HEAD
 body {  
+=======
+/* ---------- reset ------------- */
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+ul {
+  margin: 0;
+  padding-left: 0;
+}
+
+img {
+  display: block;
+}
+
+button {
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.33;
+  letter-spacing: 0.09em;
+  border: 1px solid #ff6c00;
+  border-radius: 25px;
+  padding: 12px 20px;
+  text-transform: uppercase;
+}
+
+/* -------------- body -------------- */
+body {
+>>>>>>> ad54d5047037b2e3888b0b2858c596366ee5ea15
   font-family: "Open Sans", sans-serif;
-  --primory-text-color: #303030;
+  color: var(--secondary-text-color);
 }
 
 .list {
   list-style: none;
 }
 
-/* header */
+.link {
+  text-decoration: none;
+}
+
+.title {
+  font-family: var(--font-secondary);
+  letter-spacing: 0.05em;
+  line-height: 1.16;
+}
+
+.text {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  outline: 1px solid teal;
+}
+
+/* ----------------------------- header -----------------------------*/
 .header {
-  background-color: #191c26;
+  background-color: #9da4bd;
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 .header-link {
-  color: var(--white-text-color);
-  text-decoration: none;
+  color: var(--header-link-color);
   font-weight: 600;
   font-size: 12px;
   line-height: 1.33;
@@ -63,63 +147,47 @@ body {
   color: var(--accent-color);
 }
 
-.header-logo {
-}
-.header-nav {
-}
-.header-list {
-}
-.header-item {
-}
-
 .header-button {
-  font-family: "Open Sans";
-  color: var(--white-text-color);
-  font-weight: 600;
-  font-size: 12px;
-  line-height: 1.33;
-  letter-spacing: 0.09em;
-  text-transform: uppercase;
   background-color: #191c26;
+  color: var(--button-text-primory-color);
 }
 
-/* hero */
-.hero {
-  background-color: #191c26;
+.header-button:hover {
+  background-color: #fff;
+  color: #303030;
 }
+
+/* ----------------------------- hero -----------------------------*/
+.hero-content {
+  background-color: #191c26;
+  padding: 271px 100px 207px;
+}
+
 .hero-text-top {
-  font-weight: 600;
-  font-size: 11px;
-  line-height: 1.36;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-  color: var(--top-text-color);
+  color: var(--top-text-secondary-color);
+  margin-bottom: var(--repeat-margin);
 }
 .hero-title {
-  font-family: "Raleway";
-  font-weight: 700;
   font-size: 72px;
   line-height: 1.18;
-  letter-spacing: 0.05em;
-  color: var(--white-text-color);
+  color: var(--title-secondary-color);
+  margin-bottom: var(--repeat-margin);
 }
+
 .hero-slogan {
   font-size: 18px;
-  line-height: 30px;
+  line-height: 1.66;
   letter-spacing: 0.02em;
-  color: var(--grey-background-color);
+  color: #9da4bd;
+  max-width: 400px;
 }
-.hero-list {
-}
-.hero-item {
-}
+
 .hero-link {
   font-weight: 600;
   font-size: 11px;
   line-height: 1.36;
-  letter-spacing: 0.2em;
-  text-decoration: none;
-  color: var(--primory-text-color);
+  letter-spacing: 0.02em;
+  color: var(--hero-link-color);
 }
 
 .hero-link:hover,
@@ -127,157 +195,163 @@ body {
   color: var(--accent-color);
 }
 
-/* about */
+/* ----------------------------- about -----------------------------*/
 .about {
+  background-color: #dcdcdc;
+  padding-top: 164px;
+  padding-bottom: 89px;
 }
-.about-list {
-}
-.about-item {
-}
+
 .about-text-top {
-  font-weight: 600;
-  font-size: 11px;
-  line-height: 1.36;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
+  margin-bottom: var(--repeat-margin);
 }
 .about-title {
-  font-family: "Raleway";
-  font-weight: 700;
   font-size: 42px;
-  line-height: 1.16;
-  letter-spacing: 0.05em;
+  margin-bottom: var(--repeat-margin);
 }
 .about-slogan {
   font-size: 18px;
   line-height: 1.66;
   letter-spacing: 0.02em;
-  color: var(--slogan-text-color);
+  color: var(--primory-text-color);
+  margin-bottom: var(--repeat-margin);
 }
 .about-desc {
   font-size: 14px;
   line-height: 1.85;
   letter-spacing: 0.02em;
-  color: var(--slogan-text-color);
+  color: var(--primory-text-color);
+  margin-bottom: 40px;
 }
 .about-button {
-  font-family: "Open Sans";
-  font-weight: 600;
-  font-size: 12px;
-  line-height: 1.33;
-  letter-spacing: 0.09em;
-  text-transform: uppercase;
-  color: var(--primory-text-color);
+  background-color: #ffffff;
+  color: var(--button-text-secondary-color);
 }
 
-/* price */
+.about-button:hover {
+  background-color: #191c26;
+  color: #ffffff;
+}
+
+/* ----------------------------- price -----------------------------*/
 .price {
   background-color: #191c26;
+  padding-top: 130px;
+  padding-bottom: 130px;
 }
+
 .price-text-top {
-  font-weight: 600;
-  font-size: 11px;
-  line-height: 1.36;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-  color: var(--top-text-color);
+  color: var(--top-text-secondary-color);
+  margin-bottom: var(--repeat-margin);
 }
+
 .price-title {
-  font-weight: 700;
   font-size: 42px;
-  line-height: 1.16;
-  letter-spacing: 0.05em;
-  color: var(--white-text-color);
+  color: var(--title-secondary-color);
+  margin-bottom: 44px;
 }
+
 .price-list-left {
+  outline: 1px dotted red;
+  padding: 30px 40px;
 }
+
+.price-list-right {
+  outline: 1px dotted green;
+  padding: 30px 40px;
+}
+
 .price-item {
+  margin-bottom: var(--repeat-margin);
 }
+
 .price-text-item {
   font-size: 18px;
   line-height: 1.66;
   letter-spacing: 0.02em;
-  color: var(--grey-background-color);
-}
-.price-list-right {
-}
-.price-button {
-  font-family: "Open Sans";
-  font-weight: 600;
-  font-size: 12px;
-  line-height: 1.33;
-  letter-spacing: 0.09em;
-  text-transform: uppercase;
-  color: var(--white-text-color);
-  background-color: #191c26;
+  color: var(--price-text-color);
 }
 
-/* stats */
+.price-button {
+  display: block;
+  margin: 0 auto;
+  margin-top: 50px;
+  background-color: #191c26;
+  color: var(--button-text-primory-color);
+}
+
+.price-button:hover {
+  background-color: #ffffff;
+  color: #303030;
+}
+
+/* ----------------------------- stats -----------------------------*/
+
 .stats {
+  background-color: #f0ffff;
+  padding-top: 143px;
+  padding-bottom: 137px;
 }
-.stats-list {
-}
+
 .stats-item {
+  width: 170px;
+  height: 133px;
+  padding: 20px 24px;
+  outline: 1px solid blue;
 }
+
 .stats-numbers {
   font-weight: 700;
   font-size: 42px;
   line-height: 1.35;
   letter-spacing: 0.05em;
+  text-align: center;
+  display: block;
+  margin-bottom: 6px;
 }
 .stats-text-item {
   font-weight: 600;
   font-size: 11px;
   line-height: 1.36;
+  text-align: center;
 }
+
 .stats-text-top {
-  font-weight: 600;
-  font-size: 11px;
-  line-height: 1.36;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
+  margin-bottom: var(--repeat-margin);
 }
 .stats-title {
-  font-family: "Raleway";
-  font-weight: 700;
   font-size: 42px;
-  line-height: 1.16;
-  letter-spacing: 0.05em;
+  margin-bottom: var(--repeat-margin);
 }
 .stats-slogan {
   font-size: 18px;
   line-height: 1.66;
   letter-spacing: 0.02em;
-  color: var(--slogan-text-color);
+  color: var(--primory-text-color);
 }
 
-/* masters */
+/* ---------------------------- masters ----------------------------*/
 .masters {
+  padding-top: 130px;
+  padding-bottom: 130px;
   background-color: #f7f7f7;
 }
 .masters-text-top {
-  font-weight: 600;
-  font-size: 11px;
-  line-height: 1.36;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
+  margin-bottom: var(--repeat-margin);
 }
 .masters-tltle {
-  font-family: "Raleway";
-  font-weight: 700;
   font-size: 42px;
-  line-height: 1.16;
-  letter-spacing: 0.05em;
+  margin-bottom: 44px;
 }
-.masters-list {
-}
-.masters-item {
-}
+
 .masters-subtitle {
   font-size: 18px;
   line-height: 1.38;
   letter-spacing: 0.02em;
+  margin-bottom: 8px;
+  margin-top: 30px;
 }
+
 .masters-text-item {
   font-size: 14px;
   line-height: 1.35;
@@ -285,93 +359,97 @@ body {
   color: var(--accent-color);
 }
 
-/* portfolio */
+/* ---------------------------- portfolio ----------------------------*/
+
 .portfolio {
-}
-.portfolio-text-top {
-  font-weight: 600;
-  font-size: 11px;
-  line-height: 1.36;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-}
-.portfolio-title {
-  /* Скрыть */
-}
-.portfolio-list {
-}
-.portfolio-item {
+  padding-top: 130px;
+  padding-bottom: 130px;
+  background-color: #ffe4e1;
 }
 
-/* registration */
+.portfolio-text-top {
+  margin-bottom: 44px;
+}
+.portfolio-title {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
+
+/* ---------------------------- registration ----------------------------*/
 .registration {
+  padding-top: 130px;
+  padding-bottom: 193px;
   background-color: #191c26;
 }
 .registration-title {
-  font-family: "Raleway";
-  font-weight: 700;
   font-size: 42px;
-  line-height: 1.16;
-  letter-spacing: 0.05em;
-  color: var(--white-text-color);
+  color: var(--title-secondary-color);
 }
 .registration-button {
-  font-family: "Open Sans";
-  font-weight: 600;
-  font-size: 12px;
-  line-height: 1.33;
-  letter-spacing: 0.09em;
-  text-transform: uppercase;
-  color: var(--white-text-color);
+  padding: 12px 38px;
   background-color: #191c26;
+  color: var(--button-text-primory-color);
 }
 
-/* contacts */
+.registration-button:hover {
+  background-color: #ffffff;
+  color: #303030;
+}
+
+/* ---------------------------- contacts ----------------------------*/
 .contacts {
-  background-color: #191c26;
+  padding-top: 130px;
+  padding-bottom: 130px;
+  background-color: #191c20;
 }
 .contacts-title {
-  font-family: "Raleway";
-  font-weight: 700;
   font-size: 42px;
-  line-height: 1.16;
-  letter-spacing: 0.05em;
-  color: var(--white-text-color);
+  color: var(--title-secondary-color);
+  margin-bottom: 40px;
 }
-.contacts-address {
-}
+
 .contacts-list {
+  padding-bottom: 70px;
 }
-.contacts-item {
-}
+
 .contacts-link {
   font-size: 18px;
   line-height: 1.66;
   letter-spacing: 0.02em;
-  color: var(--grey-background-color);
-  text-decoration-line: underline;
+  color: var(--contact-text-color);
   font-style: normal;
+  margin-bottom: var(--repeat-margin);
 }
 
-.contacts-link.decoration {
-  text-decoration: none;
+.contacts-link:hover,
+.contacts-link:focus {
+  color: var(--accent-color);
 }
+
+.decoration {
+  text-decoration-line: underline;
+}
+
 .contacts-text-time {
-  font-weight: 600;
-  font-size: 11px;
-  line-height: 1.36;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-  color: var(--white-text-color);
+  color: var(--title-secondary-color);
+  margin-bottom: var(--repeat-margin);
 }
 .contacts-slogan {
   font-size: 18px;
   line-height: 1.66;
   letter-spacing: 0.02em;
-  color: var(--grey-background-color);
+  color: var(--contact-text-color);
 }
 
-/* footer */
+/* ---------------------------- footer ----------------------------*/
 .footer {
   background-color: #f7f7f7;
 }
@@ -379,20 +457,16 @@ body {
   font-weight: 600;
   font-size: 11px;
   line-height: 1.36;
-  letter-spacing: 0.2em;
-  color: var(--grey-background-color);
+  letter-spacing: 0.02em;
+  color: #9da4bd;
 }
-.footer-list {
-}
-.footer-item {
-}
+
 .footer-link {
   font-weight: 600;
   font-size: 11px;
   line-height: 1.36;
-  letter-spacing: 0.2em;
-  text-decoration: none;
-  color: var(--primory-text-color);
+  letter-spacing: 0.02em;
+  color: var(--footer-link-color);
 }
 
 .footer-link:hover,
