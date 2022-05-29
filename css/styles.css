@@ -1,40 +1,3 @@
-<<<<<<< HEAD
-/* 'Open Sans', sans-serif */
-/* 'Raleway', sans-serif */
-
-/* color */
-/* #FFFFFF; */
-/* #9DA4BD; */
-/* rgba(157, 164, 189, 0.4) */
-/* rgba(157, 164, 189, 0.6) */
-/* #303030; */
-/* #555555; */
-/* #FF6C00; */
-
-/* background */
-/* #191C26; - registration*/
-/* #F7F7F7; - masters*/
-
-:root {
-  --header-link-color:#ffffff;
-  --footer-link-color:#ffffff;
-  --secondary-title-color: #ffffff;
-  --primory-text-button: #ffffff;
-  --grey-background-color: #9da4bd;
-  --contact-text-color: #9da4bd;
-  --price-text-color: #9da4bd;
-  --secondary-slogan-color: #9da4bd;
-  --registration-text-color: rgba(157, 164, 189, 0.4);
-  --secondary-top-text: rgba(157, 164, 189, 0.6);
-  --primory-text-color: #303030;
-  --primory-title-color: #303030;
-  --secondary-text-button: #303030;
-  --hero-link-color: #303030;
-  --primory-top-text: #303030;
-  --secondary-text-color: #555555;
-  --primary-slogan-color: #555555;
-  --masters-speciality-text-color: #ff6c00;
-=======
 :root {
   --primory-text-color: #555555;
   --secondary-text-color: #303030;
@@ -49,16 +12,12 @@
   --header-link-color: #ffffff;
   --hero-link-color: #303030;
   --footer-link-color: #303030;
->>>>>>> ad54d5047037b2e3888b0b2858c596366ee5ea15
   --accent-color: #ff6c00;
   --registration-text-color: rgba(157, 164, 189, 0.4);
   --font-secondary: "Raleway", sans-serif;
   --repeat-margin: 20px;
 }
 
-<<<<<<< HEAD
-body {  
-=======
 /* ---------- reset ------------- */
 p,
 h1,
@@ -93,7 +52,6 @@ button {
 
 /* -------------- body -------------- */
 body {
->>>>>>> ad54d5047037b2e3888b0b2858c596366ee5ea15
   font-family: "Open Sans", sans-serif;
   color: var(--secondary-text-color);
 }
@@ -246,9 +204,6 @@ body {
 
 .about-item:not(:last-child) {
   margin-right: 30px;
-}
-
-.about-content {
 }
 
 .about-text-top {
