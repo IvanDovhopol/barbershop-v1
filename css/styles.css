@@ -193,7 +193,7 @@ body {
   padding-bottom: 89px;
 }
 
-.about .container {
+.about > .container {
   display: flex;
 }
 
@@ -255,18 +255,30 @@ body {
   margin-bottom: 44px;
 }
 
+.price-list-content {
+  display: flex;
+}
+
 .price-list-left {
   outline: 1px dotted red;
   padding: 30px 40px;
+  flex-grow: 1;
 }
 
 .price-list-right {
   outline: 1px dotted green;
   padding: 30px 40px;
+  flex-grow: 1;
 }
 
 .price-item {
   margin-bottom: var(--repeat-margin);
+  display: flex;
+  justify-content: space-between;
+}
+
+.price-item:last-child {
+  margin-bottom: 0;
 }
 
 .price-text-item {
@@ -294,6 +306,20 @@ body {
   background-color: #f0ffff;
   padding-top: 143px;
   padding-bottom: 137px;
+}
+
+.stats-list {
+  width: 370px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.stats-item:nth-child(odd) {
+  margin-right: 30px;
+}
+
+.stats-item:nth-child(even) {
+  margin-top: 30px;
 }
 
 .stats-item {
@@ -339,17 +365,33 @@ body {
   padding-bottom: 130px;
   background-color: #f7f7f7;
 }
+
 .masters-text-top {
   margin-bottom: var(--repeat-margin);
 }
+
 .masters-tltle {
   font-size: 42px;
   margin-bottom: 44px;
 }
 
+.masters-list {
+  display: flex;
+}
+
+.masters-item {
+  margin-right: 30px;
+  width: calc((100% - 60px) / 3);
+}
+
+.masters-item:last-child {
+  margin-right: 0;
+}
+
 .masters-subtitle {
   font-size: 18px;
   line-height: 1.38;
+  text-align: center;
   letter-spacing: 0.02em;
   margin-bottom: 8px;
   margin-top: 30px;
@@ -359,6 +401,7 @@ body {
   font-size: 14px;
   line-height: 1.35;
   letter-spacing: 0.02em;
+  text-align: center;
   color: var(--accent-color);
 }
 
@@ -373,6 +416,7 @@ body {
 .portfolio-text-top {
   margin-bottom: 44px;
 }
+
 .portfolio-title {
   position: absolute;
   white-space: nowrap;
@@ -386,12 +430,28 @@ body {
   margin: -1px;
 }
 
+.portfolio-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: -15px;
+}
+
+.portfolio-item {
+  margin: 15px;
+  width: calc(100% / 4 - 30px);
+}
+
 /* ---------------------------- REGISTRATION ----------------------------*/
 .registration {
   padding-top: 130px;
   padding-bottom: 193px;
   background-color: #191c26;
 }
+
+.registration > .container {
+  padding-left: 58px;
+}
+
 .registration-title {
   font-size: 42px;
   color: var(--title-secondary-color);
@@ -412,6 +472,11 @@ body {
   padding-bottom: 130px;
   background-color: #191c20;
 }
+
+.contacts > .container {
+  padding-left: 100px;
+}
+
 .contacts-title {
   font-size: 42px;
   color: var(--title-secondary-color);
@@ -454,7 +519,17 @@ body {
 /* ---------------------------- FOOTER ----------------------------*/
 .footer {
   background-color: #f7f7f7;
+  padding-top: 57px;
+  padding-bottom: 55px;
 }
+
+.footer .container {
+  padding-right: 55px;
+  padding-left: 55px;
+  display: flex;
+  align-items: center;
+}
+
 .footer-text {
   font-weight: 600;
   font-size: 11px;
@@ -463,7 +538,17 @@ body {
   color: #9da4bd;
 }
 
+.footer-list {
+  display: flex;
+  margin-left: auto;
+}
+
+.footer-item + .footer-item {
+  margin-left: 40px;
+}
+
 .footer-link {
+  display: block;
   font-weight: 600;
   font-size: 11px;
   line-height: 1.36;
