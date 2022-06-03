@@ -618,6 +618,10 @@ body {
   margin-bottom: var(--repeat-margin);
 }
 
+.text.contacts-text-time::before {
+  background-color: var(--registration-text-color);
+}
+
 .contacts-slogan {
   font-size: 18px;
   line-height: 1.66;
