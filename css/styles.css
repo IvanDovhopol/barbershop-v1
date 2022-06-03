@@ -16,6 +16,9 @@
   --registration-text-color: rgba(157, 164, 189, 0.4);
   --font-secondary: "Raleway", sans-serif;
   --repeat-margin: 20px;
+  --bc-icons: #ffffff;
+  --color-icons: #303030;
+  --stats-bc-item: #f7f7f7;
 }
 
 /* ---------- reset ------------- */
@@ -44,7 +47,7 @@ button {
   font-size: 12px;
   line-height: 1.33;
   letter-spacing: 0.09em;
-  border: 1px solid #ff6c00;
+  border: 1px solid var(--accent-color);
   border-radius: 25px;
   padding: 12px 20px;
   text-transform: uppercase;
@@ -76,6 +79,16 @@ body {
   line-height: 1.36;
   letter-spacing: 0.1em;
   text-transform: uppercase;
+  display: flex;
+  align-items: center;
+}
+
+.text::before {
+  content: "";
+  width: 62px;
+  height: 1px;
+  margin-right: 20px;
+  background-color: currentColor;
 }
 
 .container {
@@ -83,7 +96,6 @@ body {
   margin: 0 auto;
   padding-left: 15px;
   padding-right: 15px;
-  outline: 1px solid teal;
 }
 
 /* ----------------------------- HEADER -----------------------------*/
@@ -135,7 +147,8 @@ body {
   color: var(--button-text-primory-color);
 }
 
-.header-button:hover {
+.header-button:hover,
+.header-button:focus {
   background-color: var(--accent-color);
 }
 
@@ -150,6 +163,10 @@ body {
 
 .hero-content {
   background-color: #191c26;
+  background-image: linear-gradient(rgba(25, 28, 38, 0.2), rgba(25, 28, 38, 0.2)), url(../img/hero.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
   padding: 271px 100px 207px;
   flex-grow: 1;
 }
@@ -158,6 +175,7 @@ body {
   color: var(--top-text-secondary-color);
   margin-bottom: var(--repeat-margin);
 }
+
 .hero-title {
   font-size: 72px;
   line-height: 1.18;
@@ -188,7 +206,6 @@ body {
 
 /* ----------------------------- ABOUT -----------------------------*/
 .about {
-  background-color: #dcdcdc;
   padding-top: 164px;
   padding-bottom: 89px;
 }
@@ -232,14 +249,22 @@ body {
   color: var(--button-text-secondary-color);
 }
 
-.about-button:hover {
+.about-button:hover,
+.about-button:focus {
   background-color: var(--accent-color);
   color: #ffffff;
 }
 
 /* ----------------------------- PRICE -----------------------------*/
 .price {
+  max-width: 1280px;
+  max-height: 718px;
   background-color: #191c26;
+  background-image: url(../img/prices.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  margin: 0 auto;
   padding-top: 130px;
   padding-bottom: 130px;
 }
@@ -259,26 +284,34 @@ body {
   display: flex;
 }
 
-.price-list-left {
-  outline: 1px dotted red;
+.price-list {
   padding: 30px 40px;
   flex-grow: 1;
+  background-image: linear-gradient(180deg, #171a24 0%, rgba(23, 26, 36, 0.2) 100%);
 }
 
-.price-list-right {
-  outline: 1px dotted green;
-  padding: 30px 40px;
-  flex-grow: 1;
+.price-list + .price-list {
+  background-image: linear-gradient(180deg, #090b13 0%, rgba(9, 11, 19, 0.2) 100%);
 }
 
 .price-item {
   margin-bottom: var(--repeat-margin);
   display: flex;
   justify-content: space-between;
+  align-items: baseline;
 }
 
 .price-item:last-child {
   margin-bottom: 0;
+}
+
+.price-item::before {
+  content: "";
+  height: 1px;
+  flex-grow: 1;
+  background-color: currentColor;
+  margin-right: 6px;
+  margin-left: 6px;
 }
 
 .price-text-item {
@@ -286,6 +319,10 @@ body {
   line-height: 1.66;
   letter-spacing: 0.02em;
   color: var(--price-text-color);
+}
+
+.price-text-item:first-child {
+  order: -1;
 }
 
 .price-button {
@@ -296,22 +333,33 @@ body {
   color: var(--button-text-primory-color);
 }
 
-.price-button:hover {
+.price-button:hover,
+.price-button:focus {
   background-color: var(--accent-color);
 }
 
 /* ----------------------------- STATS -----------------------------*/
 
 .stats {
-  background-color: #f0ffff;
   padding-top: 143px;
   padding-bottom: 137px;
 }
+
+/* .stats > .container {
+  display: flex;
+} */
 
 .stats-list {
   width: 370px;
   display: flex;
   flex-wrap: wrap;
+}
+
+.stats-item {
+  width: 170px;
+  height: 133px;
+  padding: 20px 24px;
+  background-color: var(--stats-bc-item);
 }
 
 .stats-item:nth-child(odd) {
@@ -320,13 +368,6 @@ body {
 
 .stats-item:nth-child(even) {
   margin-top: 30px;
-}
-
-.stats-item {
-  width: 170px;
-  height: 133px;
-  padding: 20px 24px;
-  outline: 1px solid blue;
 }
 
 .stats-numbers {
@@ -338,6 +379,19 @@ body {
   display: block;
   margin-bottom: 6px;
 }
+
+.stats-numbers::after {
+  content: "+";
+  width: 13px;
+  height: 22px;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.37;
+  text-align: center;
+  color: var(--accent-color);
+  vertical-align: top;
+}
+
 .stats-text-item {
   font-weight: 600;
   font-size: 11px;
@@ -405,12 +459,43 @@ body {
   color: var(--accent-color);
 }
 
+.masters-content {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+}
+
+.masters-item-icons {
+  width: 44px;
+  height: 44px;
+  margin-right: 10px;
+}
+
+.masters-item-icons:last-child {
+  margin-right: 0;
+}
+
+.masters-link {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  fill: var(--color-icons);
+  background-color: var(--bc-icons);
+  border-radius: 50%;
+}
+
+.masters-link:hover,
+.masters-link:focus {
+  fill: var(--accent-color);
+}
+
 /* ---------------------------- PORTFOLIO ----------------------------*/
 
 .portfolio {
   padding-top: 130px;
   padding-bottom: 130px;
-  background-color: #ffe4e1;
 }
 
 .portfolio-text-top {
@@ -441,11 +526,21 @@ body {
   width: calc(100% / 4 - 30px);
 }
 
-/* ---------------------------- REGISTRATION ----------------------------*/
+/* ----------------------- CONNECTION ------------------- */
+.connection {
+  background-color: #191c26;
+}
+
+.connection > .container {
+  outline: 1px solid red;
+  display: flex;
+}
+
+/* -------------------------- REGISTRATION --------------------------*/
 .registration {
   padding-top: 130px;
-  padding-bottom: 193px;
-  background-color: #191c26;
+  padding-bottom: 130px;
+  width: calc(50% + 15px);
 }
 
 .registration > .container {
@@ -462,15 +557,20 @@ body {
   color: var(--button-text-primory-color);
 }
 
-.registration-button:hover {
+.registration-button:hover,
+.registration-button:focus {
   background-color: var(--accent-color);
 }
 
 /* ---------------------------- CONTACTS ----------------------------*/
 .contacts {
+  padding-left: 100px;
   padding-top: 130px;
   padding-bottom: 130px;
-  background-color: #191c20;
+  width: calc(50% - 15px);
+  background-image: url(../img/contacts.png);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .contacts > .container {
@@ -485,6 +585,14 @@ body {
 
 .contacts-list {
   padding-bottom: 70px;
+}
+
+.contacts-item {
+  margin-bottom: var(--repeat-margin);
+}
+
+.contacts-item:last-child {
+  margin-bottom: 0;
 }
 
 .contacts-link {
@@ -509,6 +617,7 @@ body {
   color: var(--title-secondary-color);
   margin-bottom: var(--repeat-margin);
 }
+
 .contacts-slogan {
   font-size: 18px;
   line-height: 1.66;
@@ -540,11 +649,26 @@ body {
 
 .footer-list {
   display: flex;
+  align-items: center;
   margin-left: auto;
+}
+
+.footer-item {
+  display: flex;
+  align-items: center;
 }
 
 .footer-item + .footer-item {
   margin-left: 40px;
+}
+
+.footer-item.instagram::before {
+  display: block;
+  content: "";
+  width: 60px;
+  height: 1px;
+  background-color: currentColor;
+  margin-right: 40px;
 }
 
 .footer-link {
