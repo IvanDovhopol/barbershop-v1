@@ -1,0 +1,19 @@
+.portfolio {
+	padding-top: 130px;
+	padding-bottom: 130px;
+}
+
+.portfolio__text-top {
+	margin-bottom: 44px;
+}
+
+.portfolio__list {
+	display: flex;
+	flex-wrap: wrap;
+	margin: -15px;
+}
+
+.portfolio__item {
+	margin: 15px;
+	width: calc(100% / 4 - 30px);
+}

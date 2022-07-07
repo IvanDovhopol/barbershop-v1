@@ -1,4 +1,4 @@
-.price {
+.prices {
 	max-width: 1280px;
 	max-height: 718px;
 	background-color: #191c26;
@@ -11,22 +11,22 @@
 	padding-bottom: 130px;
 }
 
-.price-text-top {
+.prices__pretitle {
 	color: var(--top-text-secondary-color);
 	margin-bottom: var(--repeat-margin);
 }
 
-.price-title {
+.prices__title {
 	font-size: 42px;
 	color: var(--title-secondary-color);
 	margin-bottom: 44px;
 }
 
-.price-list-content {
+.prices__wrap {
 	display: flex;
 }
 
-.price-list {
+.prices-block {
 	padding: 30px 40px;
 	flex-grow: 1;
 	background-image: linear-gradient(
@@ -34,57 +34,58 @@
 		#171a24 0%,
 		rgba(23, 26, 36, 0.2) 100%
 	);
+
+	& + & {
+		background-image: linear-gradient(
+			180deg,
+			#090b13 0%,
+			rgba(9, 11, 19, 0.2) 100%
+		);
+	}
 }
 
-.price-list + .price-list {
-	background-image: linear-gradient(
-		180deg,
-		#090b13 0%,
-		rgba(9, 11, 19, 0.2) 100%
-	);
-}
-
-.price-item {
+.prices-block__item {
 	margin-bottom: var(--repeat-margin);
 	display: flex;
 	justify-content: space-between;
 	align-items: baseline;
+
+	&:last-child {
+		margin-bottom: 0;
+	}
+
+	&::before {
+		content: '';
+		height: 1px;
+		flex-grow: 1;
+		background-color: currentColor;
+		margin-right: 6px;
+		margin-left: 6px;
+	}
 }
 
-.price-item:last-child {
-	margin-bottom: 0;
-}
-
-.price-item::before {
-	content: '';
-	height: 1px;
-	flex-grow: 1;
-	background-color: currentColor;
-	margin-right: 6px;
-	margin-left: 6px;
-}
-
-.price-text-item {
+.prices-block__name,
+.prices-block__sum {
 	font-size: 18px;
 	line-height: 1.66;
 	letter-spacing: 0.02em;
 	color: var(--price-text-color);
+
+	&:first-child {
+		order: -1;
+	}
 }
 
-.price-text-item:first-child {
-	order: -1;
-}
-
-.price-button {
+.prices__btn {
 	display: block;
 	margin: 0 auto;
 	margin-top: 50px;
 	background-color: transparent;
 	color: var(--button-text-primory-color);
 	transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
 
-.price-button:hover,
-.price-button:focus {
-	background-color: var(--accent-color);
+	&:hover,
+	&:focus {
+		background-color: var(--accent-color);
+	}
 }
