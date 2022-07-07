@@ -1,484 +1,636 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Raleway:wght@700&display=swap"
-      rel="stylesheet"
-    />
-    <title>BarberShop</title>
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
-      integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
-    <link rel="stylesheet" href="./css/styles.css" />
-  </head>
-  <body>
-    <!-- header -->
-    <header class="header">
-      <div class="container">
-        <a class="header-logo" href="./index.html">
-          <svg width="65" height="55">
-            <use href="./img/sprite.svg#icon-logo"></use>
-          </svg>
-        </a>
-        <nav class="header-nav">
-          <ul class="header-list list">
-            <li class="header-item">
-              <a href="#about-us" class="header-link link">О нас</a>
-            </li>
-            <li class="header-item">
-              <a href="#price" class="header-link link">Услуги и цены</a>
-            </li>
-            <li class="header-item">
-              <a href="#masters" class="header-link link">Мастера</a>
-            </li>
-            <li class="header-item">
-              <a href="#contacts" class="header-link link">Контакты</a>
-            </li>
-          </ul>
-        </nav>
-        <div class="header-connect">
-          <a href="tel:+380441111111" class="header-link link">+38 044 111 11 11</a>
-          <button type="button" class="header-button btn" data-modal-open>онлайн-запись</button>
-        </div>
-      </div>
-    </header>
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Raleway:wght@700&display=swap"
+			rel="stylesheet"
+		/>
+		<title>BarberShop</title>
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+			integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
+		/>
+		<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+		<link rel="stylesheet" href="./css/main.min.css" />
+	</head>
+	<body>
+		<!-- header -->
+		<header class="header">
+			<div class="container">
+				<a class="header-logo" href="./index.html">
+					<svg width="65" height="55">
+						<use href="./img/sprite.svg#icon-logo"></use>
+					</svg>
+				</a>
+				<nav class="header-nav">
+					<ul class="header-list list">
+						<li class="header-item">
+							<a href="#about-us" class="header-link link">О нас</a>
+						</li>
+						<li class="header-item">
+							<a href="#price" class="header-link link">Услуги и цены</a>
+						</li>
+						<li class="header-item">
+							<a href="#masters" class="header-link link">Мастера</a>
+						</li>
+						<li class="header-item">
+							<a href="#contacts" class="header-link link">Контакты</a>
+						</li>
+					</ul>
+				</nav>
+				<div class="header-connect">
+					<a href="tel:+380441111111" class="header-link link"
+						>+38 044 111 11 11</a
+					>
+					<button type="button" class="header-button btn" data-modal-open>
+						онлайн-запись
+					</button>
+				</div>
+			</div>
+		</header>
 
-    <!-- hero -->
-    <main>
-      <section class="hero">
-        <div class="container">
-          <div class="hero-soc">
-            <ul class="hero-list list">
-              <li class="hero-item">
-                <a href="/" class="hero-link link line" target="_blank" rel="noopener nofollow noreferrer">Instagram</a>
-              </li>
-              <li class="hero-item">
-                <a href="/" class="hero-link link" target="_blank" rel="noopener nofollow noreferrer">Youtube</a>
-              </li>
-            </ul>
-          </div>
-          <div class="hero-content">
-            <p lang="en" class="hero-text-top text">A hair salon for men in Kyiv</p>
-            <h1 lang="en" class="hero-title title" data-aos="zoom-in-up">BarberShop</h1>
-            <p class="hero-slogan">Мы эксперты в модных мужских стрижках. Работаем быстро, осторожно и со вкусом.</p>
-          </div>
-        </div>
-      </section>
+		<!-- hero -->
+		<main>
+			<section class="hero">
+				<div class="container">
+					<div class="hero-soc">
+						<ul class="hero-list list">
+							<li class="hero-item">
+								<a
+									href="/"
+									class="hero-link link line"
+									target="_blank"
+									rel="noopener nofollow noreferrer"
+									>Instagram</a
+								>
+							</li>
+							<li class="hero-item">
+								<a
+									href="/"
+									class="hero-link link"
+									target="_blank"
+									rel="noopener nofollow noreferrer"
+									>Youtube</a
+								>
+							</li>
+						</ul>
+					</div>
+					<div class="hero-content">
+						<p lang="en" class="hero-text-top text">
+							A hair salon for men in Kyiv
+						</p>
+						<h1 lang="en" class="hero-title title" data-aos="zoom-in-up">
+							BarberShop
+						</h1>
+						<p class="hero-slogan">
+							Мы эксперты в модных мужских стрижках. Работаем быстро, осторожно
+							и со вкусом.
+						</p>
+					</div>
+				</div>
+			</section>
 
-      <!-- about -->
-      <section id="about-us" class="about">
-        <div class="container">
-          <ul class="about-list list">
-            <li class="about-item">
-              <img src="./img/about-me1.jpg" alt="барбер бреет шею" width="270" height="445" />
-            </li>
-            <li class="about-item">
-              <img src="./img/about-me2.jpg" alt="барбер делает кантик" width="270" height="445" />
-            </li>
-          </ul>
-          <div>
-            <p class="about-text-top text">О нас</p>
-            <h2 class="about-title title" data-aos="zoom-in-up">Лучший Барбершоп твоего города</h2>
-            <p class="about-slogan">Если ты хочешь добавить в свой образ больше уверенности – тебе точно к нам.</p>
-            <p class="about-desc">
-              Мы команда, которая никогда не останавливается на достигнутом и жаждет перемен. И когда ты попадешь в руки
-              нашего мастера, то уже никогда не сможешь быть прежним. Мы команда, которая всегда с клиентами "на одной
-              волне". Поэтому, мы всегда готовы усовершенствовать каждого, кто к нам приходит!
-            </p>
-            <button type="button" class="about-button btn">онлайн-запись</button>
-          </div>
-        </div>
-      </section>
+			<!-- about -->
+			<section id="about-us" class="about">
+				<div class="container">
+					<ul class="about-list list">
+						<li class="about-item">
+							<img
+								src="./img/about-me1.jpg"
+								alt="барбер бреет шею"
+								width="270"
+								height="445"
+							/>
+						</li>
+						<li class="about-item">
+							<img
+								src="./img/about-me2.jpg"
+								alt="барбер делает кантик"
+								width="270"
+								height="445"
+							/>
+						</li>
+					</ul>
+					<div>
+						<p class="about-text-top text">О нас</p>
+						<h2 class="about-title title" data-aos="zoom-in-up">
+							Лучший Барбершоп твоего города
+						</h2>
+						<p class="about-slogan">
+							Если ты хочешь добавить в свой образ больше уверенности – тебе
+							точно к нам.
+						</p>
+						<p class="about-desc">
+							Мы команда, которая никогда не останавливается на достигнутом и
+							жаждет перемен. И когда ты попадешь в руки нашего мастера, то уже
+							никогда не сможешь быть прежним. Мы команда, которая всегда с
+							клиентами "на одной волне". Поэтому, мы всегда готовы
+							усовершенствовать каждого, кто к нам приходит!
+						</p>
+						<button type="button" class="about-button btn">
+							онлайн-запись
+						</button>
+					</div>
+				</div>
+			</section>
 
-      <!-- price -->
-      <section id="price" class="price">
-        <div class="container price-content">
-          <p class="price-text-top text">Проведи время в компании лучших мастеров</p>
-          <h2 class="price-title title">Услуги и цены</h2>
-          <div class="price-list-content">
-            <ul class="price-list list">
-              <li class="price-item">
-                <p class="price-text-item">Мужская стрижка</p>
-                <p class="price-text-item">от 300 грн.</p>
-              </li>
-              <li class="price-item">
-                <p class="price-text-item">Стрижка бороды</p>
-                <p class="price-text-item">от 200 грн.</p>
-              </li>
-              <li class="price-item">
-                <p class="price-text-item">Стрижка усов</p>
-                <p class="price-text-item">от 200 грн.</p>
-              </li>
-              <li class="price-item">
-                <p class="price-text-item">Бритье опасной бритвой</p>
-                <p class="price-text-item">от 200 грн.</p>
-              </li>
-            </ul>
-            <ul class="price-list list">
-              <li class="price-item">
-                <p class="price-text-item">Cтрижка у стажера</p>
-                <p class="price-text-item">от 50 грн.</p>
-              </li>
-              <li class="price-item">
-                <p class="price-text-item">Стрижка под насадку</p>
-                <p class="price-text-item">от 200 грн.</p>
-              </li>
-              <li class="price-item">
-                <p class="price-text-item">Детская стрижка (до 12 лет)</p>
-                <p class="price-text-item">от 300 грн.</p>
-              </li>
-              <li class="price-item">
-                <p class="price-text-item">Камуфлирование седины</p>
-                <p class="price-text-item">от 200 грн.</p>
-              </li>
-            </ul>
-          </div>
-          <button type="button" class="price-button btn">онлайн-запись</button>
-        </div>
-      </section>
+			<!-- price -->
+			<section id="price" class="price">
+				<div class="container price-content">
+					<p class="price-text-top text">
+						Проведи время в компании лучших мастеров
+					</p>
+					<h2 class="price-title title">Услуги и цены</h2>
+					<div class="price-list-content">
+						<ul class="price-list list">
+							<li class="price-item">
+								<p class="price-text-item">Мужская стрижка</p>
+								<p class="price-text-item">от 300 грн.</p>
+							</li>
+							<li class="price-item">
+								<p class="price-text-item">Стрижка бороды</p>
+								<p class="price-text-item">от 200 грн.</p>
+							</li>
+							<li class="price-item">
+								<p class="price-text-item">Стрижка усов</p>
+								<p class="price-text-item">от 200 грн.</p>
+							</li>
+							<li class="price-item">
+								<p class="price-text-item">Бритье опасной бритвой</p>
+								<p class="price-text-item">от 200 грн.</p>
+							</li>
+						</ul>
+						<ul class="price-list list">
+							<li class="price-item">
+								<p class="price-text-item">Cтрижка у стажера</p>
+								<p class="price-text-item">от 50 грн.</p>
+							</li>
+							<li class="price-item">
+								<p class="price-text-item">Стрижка под насадку</p>
+								<p class="price-text-item">от 200 грн.</p>
+							</li>
+							<li class="price-item">
+								<p class="price-text-item">Детская стрижка (до 12 лет)</p>
+								<p class="price-text-item">от 300 грн.</p>
+							</li>
+							<li class="price-item">
+								<p class="price-text-item">Камуфлирование седины</p>
+								<p class="price-text-item">от 200 грн.</p>
+							</li>
+						</ul>
+					</div>
+					<button type="button" class="price-button btn">онлайн-запись</button>
+				</div>
+			</section>
 
-      <!-- stats -->
-      <section class="stats">
-        <div class="container">
-          <div class="stats-thumb">
-            <ul class="stats-list list">
-              <li class="stats-item">
-                <span class="stats-numbers">600</span>
-                <p class="stats-text-item">Довольных клиентов в день</p>
-              </li>
-              <li class="stats-item">
-                <span class="stats-numbers">50</span>
-                <p class="stats-text-item">Наград за отличный сервис</p>
-              </li>
-              <li class="stats-item">
-                <span class="stats-numbers">20</span>
-                <p class="stats-text-item">Лучших мастеров Киева</p>
-              </li>
-              <li class="stats-item">
-                <span class="stats-numbers">100</span>
-                <p class="stats-text-item">Подарков постоянным клиентам</p>
-              </li>
-            </ul>
-          </div>
-          <div class="stats-content">
-            <p class="stats-text-top text">старая традиционная школа</p>
-            <h2 class="stats-title title" data-aos="zoom-in-up">Почему приходят именно к нам?</h2>
-            <p class="stats-slogan">
-              О нас говорят только хорошее. Но лучше 1 раз увидеть и прочувствовать, чем 10 раз прочитать.
-            </p>
-          </div>
-        </div>
-      </section>
+			<!-- stats -->
+			<section class="stats">
+				<div class="container">
+					<div class="stats-thumb">
+						<ul class="stats-list list">
+							<li class="stats-item">
+								<span class="stats-numbers">600</span>
+								<p class="stats-text-item">Довольных клиентов в день</p>
+							</li>
+							<li class="stats-item">
+								<span class="stats-numbers">50</span>
+								<p class="stats-text-item">Наград за отличный сервис</p>
+							</li>
+							<li class="stats-item">
+								<span class="stats-numbers">20</span>
+								<p class="stats-text-item">Лучших мастеров Киева</p>
+							</li>
+							<li class="stats-item">
+								<span class="stats-numbers">100</span>
+								<p class="stats-text-item">Подарков постоянным клиентам</p>
+							</li>
+						</ul>
+					</div>
+					<div class="stats-content">
+						<p class="stats-text-top text">старая традиционная школа</p>
+						<h2 class="stats-title title" data-aos="zoom-in-up">
+							Почему приходят именно к нам?
+						</h2>
+						<p class="stats-slogan">
+							О нас говорят только хорошее. Но лучше 1 раз увидеть и
+							прочувствовать, чем 10 раз прочитать.
+						</p>
+					</div>
+				</div>
+			</section>
 
-      <!-- masters -->
-      <section id="masters" class="masters">
-        <div class="container">
-          <p class="masters-text-top text">для настоящих ценителей атмосферы</p>
-          <h2 class="masters-tltle title" data-aos="zoom-in-up">Наши мастера</h2>
-          <ul class="masters-list list">
-            <li class="masters-item">
-              <div class="masters-card">
-                <img src="./img/barber-master1.jpg" alt="барбер делает кантик" width="370" />
-                <div class="masters-arise">
-                  <p class="masters-about">
-                    Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит
-                    посетителю получить исчерпывающие сведения о компании или частном лице. Вся информация не несет
-                    никакой смысловой нагрузки.
-                  </p>
-                </div>
-              </div>
-              <h3 lang="en" class="masters-subtitle">John Smith</h3>
-              <p lang="en" class="masters-text-item">Extreme Barber</p>
+			<!-- masters -->
+			<section id="masters" class="masters">
+				<div class="container">
+					<p class="masters-text-top text">для настоящих ценителей атмосферы</p>
+					<h2 class="masters-tltle title" data-aos="zoom-in-up">
+						Наши мастера
+					</h2>
+					<ul class="masters-list list">
+						<li class="masters-item">
+							<div class="masters-card">
+								<img
+									src="./img/barber-master1.jpg"
+									alt="барбер делает кантик"
+									width="370"
+								/>
+								<div class="masters-arise">
+									<p class="masters-about">
+										Ресурс предлагает комплексные предложения с разным уровнем
+										функционала и сервисов. Все это позволит посетителю получить
+										исчерпывающие сведения о компании или частном лице. Вся
+										информация не несет никакой смысловой нагрузки.
+									</p>
+								</div>
+							</div>
+							<h3 lang="en" class="masters-subtitle">John Smith</h3>
+							<p lang="en" class="masters-text-item">Extreme Barber</p>
 
-              <ul class="masters-content list">
-                <li class="masters-item-icons">
-                  <a class="masters-link link" href="/">
-                    <svg width="20" height="20">
-                      <use href="./img/sprite.svg#icon-instagram"></use>
-                    </svg>
-                  </a>
-                </li>
-                <li class="masters-item-icons">
-                  <a class="masters-link link" href="/">
-                    <svg width="20" height="20">
-                      <use href="./img/sprite.svg#icon-twitter"></use>
-                    </svg>
-                  </a>
-                </li>
-                <li class="masters-item-icons">
-                  <a class="masters-link link" href="/">
-                    <svg width="20" height="20">
-                      <use href="./img/sprite.svg#icon-facebook"></use>
-                    </svg>
-                  </a>
-                </li>
-                <li class="masters-item-icons">
-                  <a class="masters-link link" href="/">
-                    <svg width="20" height="20">
-                      <use href="./img/sprite.svg#icon-linkedin"></use>
-                    </svg>
-                  </a>
-                </li>
-              </ul>
-            </li>
-            <li class="masters-item">
-              <div class="masters-card">
-                <img src="./img/barber-master2.jpg" alt="барбер стрижет волосы" width="370" />
-                <div class="masters-arise">
-                  <p class="masters-about">
-                    Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит
-                    посетителю получить исчерпывающие сведения о компании или частном лице. Вся информация не несет
-                    никакой смысловой нагрузки.
-                  </p>
-                </div>
-              </div>
-              <h3 lang="en" class="masters-subtitle">Michele Doe</h3>
-              <p lang="en" class="masters-text-item">Extreme Barber</p>
+							<ul class="masters-content list">
+								<li class="masters-item-icons">
+									<a class="masters-link link" href="/">
+										<svg width="20" height="20">
+											<use href="./img/sprite.svg#icon-instagram"></use>
+										</svg>
+									</a>
+								</li>
+								<li class="masters-item-icons">
+									<a class="masters-link link" href="/">
+										<svg width="20" height="20">
+											<use href="./img/sprite.svg#icon-twitter"></use>
+										</svg>
+									</a>
+								</li>
+								<li class="masters-item-icons">
+									<a class="masters-link link" href="/">
+										<svg width="20" height="20">
+											<use href="./img/sprite.svg#icon-facebook"></use>
+										</svg>
+									</a>
+								</li>
+								<li class="masters-item-icons">
+									<a class="masters-link link" href="/">
+										<svg width="20" height="20">
+											<use href="./img/sprite.svg#icon-linkedin"></use>
+										</svg>
+									</a>
+								</li>
+							</ul>
+						</li>
+						<li class="masters-item">
+							<div class="masters-card">
+								<img
+									src="./img/barber-master2.jpg"
+									alt="барбер стрижет волосы"
+									width="370"
+								/>
+								<div class="masters-arise">
+									<p class="masters-about">
+										Ресурс предлагает комплексные предложения с разным уровнем
+										функционала и сервисов. Все это позволит посетителю получить
+										исчерпывающие сведения о компании или частном лице. Вся
+										информация не несет никакой смысловой нагрузки.
+									</p>
+								</div>
+							</div>
+							<h3 lang="en" class="masters-subtitle">Michele Doe</h3>
+							<p lang="en" class="masters-text-item">Extreme Barber</p>
 
-              <ul class="masters-content list">
-                <li class="masters-item-icons">
-                  <a class="masters-link link" href="/">
-                    <svg width="20" height="20">
-                      <use href="./img/sprite.svg#icon-instagram"></use>
-                    </svg>
-                  </a>
-                </li>
-                <li class="masters-item-icons">
-                  <a class="masters-link link" href="/">
-                    <svg width="20" height="20">
-                      <use href="./img/sprite.svg#icon-twitter"></use>
-                    </svg>
-                  </a>
-                </li>
-                <li class="masters-item-icons">
-                  <a class="masters-link link" href="/">
-                    <svg width="20" height="20">
-                      <use href="./img/sprite.svg#icon-facebook"></use>
-                    </svg>
-                  </a>
-                </li>
-                <li class="masters-item-icons">
-                  <a class="masters-link link" href="/">
-                    <svg width="20" height="20">
-                      <use href="./img/sprite.svg#icon-linkedin"></use>
-                    </svg>
-                  </a>
-                </li>
-              </ul>
-            </li>
-            <li class="masters-item">
-              <div class="masters-card">
-                <img src="./img/barber-master3.jpg" alt="барбер стрижет чёлку" width="370" />
-                <div class="masters-arise">
-                  <p class="masters-about">
-                    Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит
-                    посетителю получить исчерпывающие сведения о компании или частном лице. Вся информация не несет
-                    никакой смысловой нагрузки.
-                  </p>
-                </div>
-              </div>
-              <h3 lang="en" class="masters-subtitle">Alan Black</h3>
-              <p lang="en" class="masters-text-item">Extreme Barber</p>
+							<ul class="masters-content list">
+								<li class="masters-item-icons">
+									<a class="masters-link link" href="/">
+										<svg width="20" height="20">
+											<use href="./img/sprite.svg#icon-instagram"></use>
+										</svg>
+									</a>
+								</li>
+								<li class="masters-item-icons">
+									<a class="masters-link link" href="/">
+										<svg width="20" height="20">
+											<use href="./img/sprite.svg#icon-twitter"></use>
+										</svg>
+									</a>
+								</li>
+								<li class="masters-item-icons">
+									<a class="masters-link link" href="/">
+										<svg width="20" height="20">
+											<use href="./img/sprite.svg#icon-facebook"></use>
+										</svg>
+									</a>
+								</li>
+								<li class="masters-item-icons">
+									<a class="masters-link link" href="/">
+										<svg width="20" height="20">
+											<use href="./img/sprite.svg#icon-linkedin"></use>
+										</svg>
+									</a>
+								</li>
+							</ul>
+						</li>
+						<li class="masters-item">
+							<div class="masters-card">
+								<img
+									src="./img/barber-master3.jpg"
+									alt="барбер стрижет чёлку"
+									width="370"
+								/>
+								<div class="masters-arise">
+									<p class="masters-about">
+										Ресурс предлагает комплексные предложения с разным уровнем
+										функционала и сервисов. Все это позволит посетителю получить
+										исчерпывающие сведения о компании или частном лице. Вся
+										информация не несет никакой смысловой нагрузки.
+									</p>
+								</div>
+							</div>
+							<h3 lang="en" class="masters-subtitle">Alan Black</h3>
+							<p lang="en" class="masters-text-item">Extreme Barber</p>
 
-              <ul class="masters-content list">
-                <li class="masters-item-icons">
-                  <a class="masters-link link" href="/">
-                    <svg width="20" height="20">
-                      <use href="./img/sprite.svg#icon-instagram"></use>
-                    </svg>
-                  </a>
-                </li>
-                <li class="masters-item-icons">
-                  <a class="masters-link link" href="/">
-                    <svg width="20" height="20">
-                      <use href="./img/sprite.svg#icon-twitter"></use>
-                    </svg>
-                  </a>
-                </li>
-                <li class="masters-item-icons">
-                  <a class="masters-link link" href="/">
-                    <svg width="20" height="20">
-                      <use href="./img/sprite.svg#icon-facebook"></use>
-                    </svg>
-                  </a>
-                </li>
-                <li class="masters-item-icons">
-                  <a class="masters-link link" href="/">
-                    <svg width="20" height="20">
-                      <use href="./img/sprite.svg#icon-linkedin"></use>
-                    </svg>
-                  </a>
-                </li>
-              </ul>
-            </li>
-          </ul>
-        </div>
-      </section>
+							<ul class="masters-content list">
+								<li class="masters-item-icons">
+									<a class="masters-link link" href="/">
+										<svg width="20" height="20">
+											<use href="./img/sprite.svg#icon-instagram"></use>
+										</svg>
+									</a>
+								</li>
+								<li class="masters-item-icons">
+									<a class="masters-link link" href="/">
+										<svg width="20" height="20">
+											<use href="./img/sprite.svg#icon-twitter"></use>
+										</svg>
+									</a>
+								</li>
+								<li class="masters-item-icons">
+									<a class="masters-link link" href="/">
+										<svg width="20" height="20">
+											<use href="./img/sprite.svg#icon-facebook"></use>
+										</svg>
+									</a>
+								</li>
+								<li class="masters-item-icons">
+									<a class="masters-link link" href="/">
+										<svg width="20" height="20">
+											<use href="./img/sprite.svg#icon-linkedin"></use>
+										</svg>
+									</a>
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+			</section>
 
-      <!-- portfolio -->
-      <section class="portfolio">
-        <div class="container">
-          <p class="portfolio-text-top text">На латинском языке “барба” означает “борода”</p>
-          <h2 class="portfolio-title title">Портфолио</h2>
-          <ul class="portfolio-list list">
-            <li class="portfolio-item">
-              <img src="./img/portfolio1.jpg" alt="мастер стрижет голову" width="270" height="360" />
-            </li>
-            <li class="portfolio-item">
-              <img src="./img/portfolio2.jpg" alt="мастер бреет бороду" width="270" height="360" />
-            </li>
-            <li class="portfolio-item">
-              <img src="./img/portfolio3.jpg" alt="мастер делает маску на лицо" width="270" height="360" />
-            </li>
-            <li class="portfolio-item">
-              <img src="./img/portfolio4.jpg" alt="мастер делает кантик" width="270" height="360" />
-            </li>
-          </ul>
-        </div>
-      </section>
+			<!-- portfolio -->
+			<section class="portfolio">
+				<div class="container">
+					<p class="portfolio-text-top text">
+						На латинском языке “барба” означает “борода”
+					</p>
+					<h2 class="portfolio-title title">Портфолио</h2>
+					<ul class="portfolio-list list">
+						<li class="portfolio-item">
+							<img
+								src="./img/portfolio1.jpg"
+								alt="мастер стрижет голову"
+								width="270"
+								height="360"
+							/>
+						</li>
+						<li class="portfolio-item">
+							<img
+								src="./img/portfolio2.jpg"
+								alt="мастер бреет бороду"
+								width="270"
+								height="360"
+							/>
+						</li>
+						<li class="portfolio-item">
+							<img
+								src="./img/portfolio3.jpg"
+								alt="мастер делает маску на лицо"
+								width="270"
+								height="360"
+							/>
+						</li>
+						<li class="portfolio-item">
+							<img
+								src="./img/portfolio4.jpg"
+								alt="мастер делает кантик"
+								width="270"
+								height="360"
+							/>
+						</li>
+					</ul>
+				</div>
+			</section>
 
-      <!-- connection -->
-      <div class="connection">
-        <div class="container">
-          <!-- online -->
-          <section class="online">
-            <h2 class="online-title title" data-aos="zoom-in-up">Онлайн-запись</h2>
+			<!-- connection -->
+			<div class="connection">
+				<div class="container">
+					<!-- online -->
+					<section class="online">
+						<h2 class="online-title title" data-aos="zoom-in-up">
+							Онлайн-запись
+						</h2>
 
-            <!-- form -->
-            <form class="online-form" autocomplete="off">
-              <div class="online-field">
-                <input class="online-input" type="text" name="online-name" id="online-name" placeholder=" " />
-                <label class="online-label" for="online-name">Имя*</label>
-              </div>
+						<!-- form -->
+						<form class="online-form" autocomplete="off">
+							<div class="online-field">
+								<input
+									class="online-input"
+									type="text"
+									name="online-name"
+									id="online-name"
+									placeholder=" "
+								/>
+								<label class="online-label" for="online-name">Имя*</label>
+							</div>
 
-              <div class="online-field">
-                <input class="online-input" type="tel" name="online-tel" id="online-tel" placeholder=" " />
-                <label class="online-label" for="online-tel">Телефон*</label>
-              </div>
+							<div class="online-field">
+								<input
+									class="online-input"
+									type="tel"
+									name="online-tel"
+									id="online-tel"
+									placeholder=" "
+								/>
+								<label class="online-label" for="online-tel">Телефон*</label>
+							</div>
 
-              <div class="online-text-field">
-                <textarea class="online-comment" name="online-comment" id="online-comment" placeholder=" "></textarea>
-                <label class="online-label" for="online-comment">сообщение</label>
-              </div>
-              <button type="submit" class="online-button btn">отправить</button>
-            </form>
-          </section>
+							<div class="online-text-field">
+								<textarea
+									class="online-comment"
+									name="online-comment"
+									id="online-comment"
+									placeholder=" "
+								></textarea>
+								<label class="online-label" for="online-comment"
+									>сообщение</label
+								>
+							</div>
+							<button type="submit" class="online-button btn">отправить</button>
+						</form>
+					</section>
 
-          <!-- contacts -->
-          <section id="contacts" class="contacts">
-            <h2 class="contacts-title title" data-aos="zoom-in-up">Контакты</h2>
-            <ul class="contacts-list list">
-              <li class="contacts-item">
-                <address class="contacts-address">
-                  <a
-                    href="https://goo.gl/maps/H5dZbaaQ33X3Hig66"
-                    class="contacts-link address link"
-                    target="_blank"
-                    rel="noopener nofollow noreferrer"
-                    >ул. Васильковская, 7А Киев, 08132
-                  </a>
-                </address>
-              </li>
-              <li class="contacts-item">
-                <a href="tel:+380441111111" class="contacts-link link">+38 044 111 11 11</a>
-              </li>
-              <li class="contacts-item">
-                <a href="mailto:barbershop@email.com" class="contacts-link link decoration">barbershop@email.com</a>
-              </li>
-            </ul>
-            <p class="contacts-text-time text">время работы</p>
-            <p class="contacts-slogan">Ежедневно с 9:00 до 22:00</p>
-          </section>
-        </div>
-      </div>
-    </main>
+					<!-- contacts -->
+					<section id="contacts" class="contacts">
+						<h2 class="contacts-title title" data-aos="zoom-in-up">Контакты</h2>
+						<ul class="contacts-list list">
+							<li class="contacts-item">
+								<address class="contacts-address">
+									<a
+										href="https://goo.gl/maps/H5dZbaaQ33X3Hig66"
+										class="contacts-link address link"
+										target="_blank"
+										rel="noopener nofollow noreferrer"
+										>ул. Васильковская, 7А Киев, 08132
+									</a>
+								</address>
+							</li>
+							<li class="contacts-item">
+								<a href="tel:+380441111111" class="contacts-link link"
+									>+38 044 111 11 11</a
+								>
+							</li>
+							<li class="contacts-item">
+								<a
+									href="mailto:barbershop@email.com"
+									class="contacts-link link decoration"
+									>barbershop@email.com</a
+								>
+							</li>
+						</ul>
+						<p class="contacts-text-time text">время работы</p>
+						<p class="contacts-slogan">Ежедневно с 9:00 до 22:00</p>
+					</section>
+				</div>
+			</div>
+		</main>
 
-    <!-- footer -->
-    <footer class="footer">
-      <div class="container">
-        <p class="footer-text">&copy; Copyright 2020</p>
-        <ul class="footer-list list">
-          <li class="footer-item instagram">
-            <a href="/" class="footer-link link instagram" target="_blank" rel="noopener nofollow noreferrer"
-              >Instagram</a
-            >
-          </li>
-          <li class="footer-item">
-            <a href="/" class="footer-link link" target="_blank" rel="noopener nofollow noreferrer">Youtube</a>
-          </li>
-        </ul>
-      </div>
-    </footer>
+		<!-- footer -->
+		<footer class="footer">
+			<div class="container">
+				<p class="footer-text">&copy; Copyright 2020</p>
+				<ul class="footer-list list">
+					<li class="footer-item instagram">
+						<a
+							href="/"
+							class="footer-link link instagram"
+							target="_blank"
+							rel="noopener nofollow noreferrer"
+							>Instagram</a
+						>
+					</li>
+					<li class="footer-item">
+						<a
+							href="/"
+							class="footer-link link"
+							target="_blank"
+							rel="noopener nofollow noreferrer"
+							>Youtube</a
+						>
+					</li>
+				</ul>
+			</div>
+		</footer>
 
-    <!-- modal -->
-    <div class="backdrop is-hidden" data-modal>
-      <div class="modal">
-        <button class="modal-close" data-modal-close>
-          <svg width="18" height="18">
-            <use href="./img/sprite.svg#icon-close"></use>
-          </svg>
-        </button>
+		<!-- modal -->
+		<div class="backdrop is-hidden" data-modal>
+			<div class="modal">
+				<button class="modal-close" data-modal-close>
+					<svg width="18" height="18">
+						<use href="./img/sprite.svg#icon-close"></use>
+					</svg>
+				</button>
 
-        <!-- modal-form -->
-        <form class="modal-form">
-          <p class="modal-title">Оставьте свои данные, мы вам перезвоним</p>
-          <label class="modal-label" for="username">Имя</label>
-          <div class="form-field">
-            <input class="modal-input" type="text" name="name" id="username" placeholder="Иван Иванов" />
-            <svg class="modal-icon" width="18" height="18">
-              <use href="./img/sprite.svg#icon-person"></use>
-            </svg>
-          </div>
+				<!-- modal-form -->
+				<form class="modal-form">
+					<p class="modal-title">Оставьте свои данные, мы вам перезвоним</p>
+					<label class="modal-label" for="username">Имя</label>
+					<div class="form-field">
+						<input
+							class="modal-input"
+							type="text"
+							name="name"
+							id="username"
+							placeholder="Иван Иванов"
+						/>
+						<svg class="modal-icon" width="18" height="18">
+							<use href="./img/sprite.svg#icon-person"></use>
+						</svg>
+					</div>
 
-          <label class="modal-label" for="tel">Телефон</label>
-          <div class="form-field">
-            <input class="modal-input" type="tel" name="tel" id="tel" placeholder="+380 111 111 111" />
-            <svg class="modal-icon" width="18" height="18">
-              <use href="./img/sprite.svg#icon-phone"></use>
-            </svg>
-          </div>
+					<label class="modal-label" for="tel">Телефон</label>
+					<div class="form-field">
+						<input
+							class="modal-input"
+							type="tel"
+							name="tel"
+							id="tel"
+							placeholder="+380 111 111 111"
+						/>
+						<svg class="modal-icon" width="18" height="18">
+							<use href="./img/sprite.svg#icon-phone"></use>
+						</svg>
+					</div>
 
-          <label class="modal-label" for="modal-email">Почта</label>
-          <div class="form-field">
-            <input class="modal-input" type="email" name="email" id="modal-email" placeholder="studio@gmail.com" />
-            <svg class="modal-icon" width="18" height="18">
-              <use href="./img/sprite.svg#icon-email"></use>
-            </svg>
-          </div>
+					<label class="modal-label" for="modal-email">Почта</label>
+					<div class="form-field">
+						<input
+							class="modal-input"
+							type="email"
+							name="email"
+							id="modal-email"
+							placeholder="studio@gmail.com"
+						/>
+						<svg class="modal-icon" width="18" height="18">
+							<use href="./img/sprite.svg#icon-email"></use>
+						</svg>
+					</div>
 
-          <div class="feedback-box">
-            <label class="modal-label" for="feedback">Комментарий</label>
-            <textarea class="field-feedback" name="feedback" id="feedback" placeholder="Введите текст"></textarea>
-          </div>
+					<div class="feedback-box">
+						<label class="modal-label" for="feedback">Комментарий</label>
+						<textarea
+							class="field-feedback"
+							name="feedback"
+							id="feedback"
+							placeholder="Введите текст"
+						></textarea>
+					</div>
 
-          <div class="policy-thumb">
-            <input class="checkbox-policy" type="checkbox" name="policy" id="policy" />
-            <span class="icon-policy"></span>
-            <label class="label-policy" for="policy"
-              >Соглашаюсь с рассылкой и принимаю <a class="link-policy" href="/">Условия договора</a></label
-            >
-          </div>
+					<div class="policy-thumb">
+						<input
+							class="checkbox-policy"
+							type="checkbox"
+							name="policy"
+							id="policy"
+						/>
+						<span class="icon-policy"></span>
+						<label class="label-policy" for="policy"
+							>Соглашаюсь с рассылкой и принимаю
+							<a class="link-policy" href="/">Условия договора</a></label
+						>
+					</div>
 
-          <button class="modal-button flex" type="submit">Отправить</button>
-        </form>
-      </div>
-    </div>
+					<button class="modal-button flex" type="submit">Отправить</button>
+				</form>
+			</div>
+		</div>
 
-    <!-- scripts -->
-    <script src="./js/modal.js"></script>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>
-      AOS.init();
-    </script>
-  </body>
+		<!-- scripts -->
+		<script src="./js/modal.js"></script>
+		<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+		<script>
+			AOS.init();
+		</script>
+	</body>
 </html>

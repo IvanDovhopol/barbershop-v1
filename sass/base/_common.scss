@@ -1,0 +1,48 @@
+body {
+	font-family: 'Open Sans', sans-serif;
+	color: var(--secondary-text-color);
+}
+
+.list {
+	list-style: none;
+}
+
+.link {
+	text-decoration: none;
+}
+
+.title {
+	font-family: var(--font-secondary);
+	letter-spacing: 0.05em;
+	line-height: 1.16;
+}
+
+.btn {
+	cursor: pointer;
+	font-weight: 600;
+	font-size: 12px;
+	line-height: 1.33;
+	letter-spacing: 0.09em;
+	border: 1px solid var(--accent-color);
+	border-radius: 25px;
+	padding: 12px 20px;
+	text-transform: uppercase;
+}
+
+.text {
+	font-weight: 600;
+	font-size: 11px;
+	line-height: 1.36;
+	letter-spacing: 0.1em;
+	text-transform: uppercase;
+	display: flex;
+	align-items: center;
+}
+
+.text::before {
+	content: '';
+	width: 62px;
+	height: 1px;
+	margin-right: 20px;
+	background-color: currentColor;
+}
