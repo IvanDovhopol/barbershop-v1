@@ -9,6 +9,24 @@ body {
 	line-height: 1.17;
 }
 
+.pretitle {
+	font-weight: 600;
+	font-size: 11px;
+	line-height: 1.36;
+	letter-spacing: 0.1em;
+	text-transform: uppercase;
+	display: flex;
+	align-items: center;
+
+	&::before {
+		content: '';
+		width: 60px;
+		height: 1px;
+		margin-right: 20px;
+		background-color: currentColor;
+	}
+}
+
 .btn {
 	cursor: pointer;
 	font-weight: 600;
@@ -19,22 +37,4 @@ body {
 	border-radius: 25px;
 	padding: 12px 20px;
 	text-transform: uppercase;
-}
-
-.text {
-	font-weight: 600;
-	font-size: 11px;
-	line-height: 1.36;
-	letter-spacing: 0.1em;
-	text-transform: uppercase;
-	display: flex;
-	align-items: center;
-}
-
-.text::before {
-	content: '';
-	width: 60px;
-	height: 1px;
-	margin-right: 20px;
-	background-color: currentColor;
 }

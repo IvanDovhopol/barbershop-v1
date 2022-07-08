@@ -45,9 +45,9 @@
 	text-decoration-line: underline;
 }
 
-.address {
-	display: flex;
-	align-items: center;
+.contacts__link-address {
+	// display: flex;
+	// align-items: center;
 
 	// &::before {
 	// 	content: '';
@@ -60,7 +60,7 @@
 	// }
 }
 
-.contacts__text {
+.contacts__pretitle {
 	color: var(--title-secondary-color);
 	margin-bottom: var(--repeat-margin);
 

@@ -2,8 +2,15 @@
 	padding-top: 84px;
 	padding-bottom: 84px;
 
-	// padding-top: 164px;
-	// padding-bottom: 89px;
+	@include tablet {
+		padding-top: 100px;
+		padding-bottom: 100px;
+	}
+
+	@include desktop {
+		padding-top: 163px;
+		padding-bottom: 89px;
+	}
 }
 
 .about__container {
@@ -24,31 +31,35 @@
 // 	}
 // }
 
-.about-info__text-top {
+.about-info__pretitle {
 	margin-bottom: var(--repeat-margin);
 }
 
 .about-info__title {
-	font-family: var(--font-secondary);
-	letter-spacing: 0.05em;
-	line-height: 1.17;
 	font-size: 28px;
 	margin-bottom: var(--repeat-margin);
 
-	// font-size: 42px;
+	@include desktop {
+		font-size: 42px;
+	}
 }
 
 .about-info__slogan {
-	font-size: 18px;
-	line-height: 1.66;
+	font-size: 16px;
+	line-height: 1.62;
 	letter-spacing: 0.02em;
 	color: var(--primory-text-color);
 	margin-bottom: var(--repeat-margin);
+
+	@include desktop {
+		font-size: 18px;
+		line-height: 1.67;
+	}
 }
 
 .about-info__desc {
 	font-size: 14px;
-	line-height: 1.85;
+	line-height: 1.86;
 	letter-spacing: 0.02em;
 	color: var(--primory-text-color);
 	margin-bottom: 40px;

@@ -47,17 +47,17 @@
 	&:focus {
 		color: var(--accent-color);
 	}
+}
 
-	&.instagram {
-		display: flex;
-		align-items: center;
+.page-footer__link-inst {
+	display: flex;
+	align-items: center;
 
-		&::before {
-			content: '';
-			width: 60px;
-			height: 1px;
-			background-color: currentColor;
-			margin-right: 40px;
-		}
+	&::before {
+		content: '';
+		width: 60px;
+		height: 1px;
+		background-color: currentColor;
+		margin-right: 40px;
 	}
 }

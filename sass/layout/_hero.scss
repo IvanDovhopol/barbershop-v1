@@ -29,21 +29,21 @@
 	&:focus {
 		color: var(--accent-color);
 	}
+}
 
-	&.line {
-		display: flex;
-		align-items: center;
-		padding-left: 33px;
-	}
+.hero-soc__link--line {
+	display: flex;
+	align-items: center;
+	padding-left: 33px;
 
-	&.line::before {
+	&::before {
 		content: '';
 		width: 62px;
 		height: 1px;
 		margin-right: 40px;
 		background-color: currentColor;
 
-		.line:hover & {
+		.hero-soc__link--line:hover & {
 			background-color: var(--accent-color);
 		}
 	}
