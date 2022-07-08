@@ -23,7 +23,7 @@
 	</head>
 	<body>
 		<!-- header -->
-		<header class="page-header">
+		<!-- <header class="page-header">
 			<div class="page-header__container container">
 				<a class="page-header__logo" href="./index.html">
 					<svg width="65" height="55">
@@ -55,11 +55,11 @@
 					</button>
 				</div>
 			</div>
-		</header>
+		</header> -->
 
 		<!-- hero -->
 		<main>
-			<section class="hero">
+			<!-- <section class="hero">
 				<div class="hero__container container">
 					<div class="hero-soc">
 						<ul class="hero-soc__list list">
@@ -100,10 +100,10 @@
 						</p>
 					</div>
 				</div>
-			</section>
+			</section> -->
 
 			<!-- about -->
-			<section class="about" id="about-us">
+			<!-- <section class="about" id="about-us">
 				<div class="about__container container">
 					<ul class="about__list list">
 						<li class="about__item">
@@ -144,10 +144,10 @@
 						</button>
 					</div>
 				</div>
-			</section>
+			</section> -->
 
 			<!-- price -->
-			<section class="prices" id="price">
+			<!-- <section class="prices" id="price">
 				<div class="prices__container container">
 					<p class="prices__pretitle text">
 						Проведи время в компании лучших мастеров
@@ -193,10 +193,10 @@
 					</div>
 					<button type="button" class="prices__btn btn">онлайн-запись</button>
 				</div>
-			</section>
+			</section> -->
 
 			<!-- stats -->
-			<section class="stats">
+			<!-- <section class="stats">
 				<div class="stats__container container">
 					<div class="stats__wrap">
 						<ul class="statistics list">
@@ -231,10 +231,10 @@
 						</p>
 					</div>
 				</div>
-			</section>
+			</section> -->
 
 			<!-- masters -->
-			<section class="masters" id="masters">
+			<!-- <section class="masters" id="masters">
 				<div class="masters__container container">
 					<p class="masters__pretitle text">
 						для настоящих ценителей атмосферы
@@ -395,7 +395,7 @@
 						</li>
 					</ul>
 				</div>
-			</section>
+			</section> -->
 
 			<!-- portfolio -->
 			<section class="portfolio">
@@ -406,52 +406,121 @@
 					<h2 class="portfolio__title hidden">Портфолио</h2>
 					<ul class="portfolio__list list">
 						<li class="portfolio__item">
-							<img
-								src="./img/portfolio1.jpg"
-								alt="мастер стрижет голову"
-								width="270"
-								height="360"
-							/>
+							<picture>
+								<source
+									srcset="./img/portfolio1.jpg 1x, ./img/portfolio1@x2.jpg 2x"
+									media="(min-width: 1280px)"
+								/>
+								<source
+									srcset="
+										./img/portfolio1-tablet.jpg    1x,
+										./img/portfolio1-tablet@x2.jpg 2x
+									"
+									media="(min-width: 768px)"
+								/>
+								<source
+									srcset="
+										./img/portfolio1-mob.jpg    1x,
+										./img/portfolio1-mob@x2.jpg 2x
+									"
+									media="(min-width: 320px)"
+								/>
+								<img
+									src="./img/portfolio1-mob.jpg"
+									alt="мастер стрижет голову"
+								/>
+							</picture>
 						</li>
 						<li class="portfolio__item">
-							<img
-								src="./img/portfolio2.jpg"
-								alt="мастер бреет бороду"
-								width="270"
-								height="360"
-							/>
+							<picture>
+								<source
+									srcset="./img/portfolio2.jpg 1x, ./img/portfolio2@x2.jpg 2x"
+									media="(min-width: 1280px)"
+								/>
+								<source
+									srcset="
+										./img/portfolio2-tablet.jpg    1x,
+										./img/portfolio2-tablet@x2.jpg 2x
+									"
+									media="(min-width: 768px)"
+								/>
+								<source
+									srcset="
+										./img/portfolio2-mob.jpg    1x,
+										./img/portfolio2-mob@x2.jpg 2x
+									"
+									media="(min-width: 320px)"
+								/>
+								<img src="./img/portfolio2-mob.jpg" alt="мастер бреет бороду" />
+							</picture>
 						</li>
 						<li class="portfolio__item">
-							<img
-								src="./img/portfolio3.jpg"
-								alt="мастер делает маску на лицо"
-								width="270"
-								height="360"
-							/>
+							<picture>
+								<source
+									srcset="./img/portfolio3.jpg 1x, ./img/portfolio3@x2.jpg 2x"
+									media="(min-width: 1280px)"
+								/>
+								<source
+									srcset="
+										./img/portfolio3-tablet.jpg    1x,
+										./img/portfolio3-tablet@x2.jpg 2x
+									"
+									media="(min-width: 768px)"
+								/>
+								<source
+									srcset="
+										./img/portfolio3-mob.jpg    1x,
+										./img/portfolio3-mob@x2.jpg 2x
+									"
+									media="(min-width: 320px)"
+								/>
+								<img
+									src="./img/portfolio3-mob.jpg"
+									alt="мастер делает маску на лицо"
+								/>
+							</picture>
 						</li>
 						<li class="portfolio__item">
-							<img
-								src="./img/portfolio4.jpg"
-								alt="мастер делает кантик"
-								width="270"
-								height="360"
-							/>
+							<picture>
+								<source
+									srcset="./img/portfolio4.jpg 1x, ./img/portfolio4@x2.jpg 2x"
+									media="(min-width: 1280px)"
+								/>
+								<source
+									srcset="
+										./img/portfolio4-tablet.jpg    1x,
+										./img/portfolio4-tablet@x2.jpg 2x
+									"
+									media="(min-width: 768px)"
+								/>
+								<source
+									srcset="
+										./img/portfolio4-mob.jpg    1x,
+										./img/portfolio4-mob@x2.jpg 2x
+									"
+									media="(min-width: 320px)"
+								/>
+								<img
+									src="./img/portfolio4-mob.jpg"
+									alt="мастер делает кантик"
+								/>
+							</picture>
 						</li>
 					</ul>
 				</div>
 			</section>
 
 			<!-- connection -->
-			<div class="connection">
-				<div class="connection__container container">
-					<!-- online -->
-					<section class="online">
+			<!-- <div class="connection">
+				<div class="connection__container container"> -->
+			<!-- online -->
+			<!-- <section class="online">
 						<h2 class="online__title title" data-aos="zoom-in-up">
 							Онлайн-запись
-						</h2>
+						</h2> -->
 
-						<!-- form -->
-						<form class="online-form" autocomplete="off">
+			<!-- form -->
+			<!-- <form class="online-form" autocomplete="off">
 							<div class="online-form__field">
 								<input
 									class="online-form__input"
@@ -491,10 +560,10 @@
 								отправить
 							</button>
 						</form>
-					</section>
+					</section> -->
 
-					<!-- contacts -->
-					<section class="contacts" id="contacts">
+			<!-- contacts -->
+			<!-- <section class="contacts" id="contacts">
 						<h2 class="contacts__title title" data-aos="zoom-in-up">
 							Контакты
 						</h2>
@@ -527,11 +596,11 @@
 						<p class="contacts__time">Ежедневно с 9:00 до 22:00</p>
 					</section>
 				</div>
-			</div>
+			</div> -->
 		</main>
 
 		<!-- footer -->
-		<footer class="page-footer">
+		<!-- <footer class="page-footer">
 			<div class="page-footer__container container">
 				<p class="page-footer__copy">&copy; Copyright 2020</p>
 				<ul class="page-footer__list list">
@@ -555,19 +624,19 @@
 					</li>
 				</ul>
 			</div>
-		</footer>
+		</footer> -->
 
 		<!-- modal -->
-		<div class="backdrop is-hidden" data-modal>
+		<!-- <div class="backdrop is-hidden" data-modal>
 			<div class="modal">
 				<button class="modal__btn modal__btn--close" data-modal-close>
 					<svg width="18" height="18">
 						<use href="./img/sprite.svg#icon-close"></use>
 					</svg>
-				</button>
+				</button> -->
 
-				<!-- modal-form -->
-				<form class="modal-form">
+		<!-- modal-form -->
+		<!-- <form class="modal-form">
 					<p class="modal-form__title">
 						Оставьте свои данные, мы вам перезвоним
 					</p>
@@ -640,7 +709,7 @@
 					<button class="modal_btn flex" type="submit">Отправить</button>
 				</form>
 			</div>
-		</div>
+		</div> -->
 
 		<!-- scripts -->
 		<script src="./js/modal.js"></script>
