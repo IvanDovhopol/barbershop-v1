@@ -1,3 +1,10 @@
+@mixin font($f-s, $f-w, $l-h, $l-s) {
+	font-size: $f-s;
+	font-weight: $f-w;
+	line-height: $l-h;
+	letter-spacing: $l-s;
+}
+
 @mixin mobile {
 	@media screen and (min-width: 480px) {
 		@content;

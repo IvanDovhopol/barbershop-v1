@@ -3,18 +3,10 @@ body {
 	color: var(--secondary-text-color);
 }
 
-.list {
-	list-style: none;
-}
-
-.link {
-	text-decoration: none;
-}
-
 .title {
 	font-family: var(--font-secondary);
 	letter-spacing: 0.05em;
-	line-height: 1.16;
+	line-height: 1.17;
 }
 
 .btn {
@@ -45,8 +37,4 @@ body {
 	height: 1px;
 	margin-right: 20px;
 	background-color: currentColor;
-}
-
-.decoration {
-	text-decoration-line: underline;
 }
