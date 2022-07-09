@@ -107,20 +107,41 @@
 				<div class="container about__container">
 					<ul class="about__list">
 						<li class="about__item">
-							<img
-								src="./img/about-me1.jpg"
-								alt="барбер бреет шею"
-								width="270"
-								height="445"
-							/>
+							<picture>
+								<source
+									srcset="./img/about-me1.jpg 1x, ./img/about-me1@x2.jpg 2x"
+									media="(min-width: 1280px)"
+								/>
+								<source
+									srcset="
+										./img/about-me1-tablet.jpg    1x,
+										./img/about-me1-tablet@x2.jpg 2x
+									"
+									media="(min-width: 768px)"
+								/>
+
+								<img src="./img/about-me1-tablet.jpg" alt="барбер бреет шею" />
+							</picture>
 						</li>
 						<li class="about__item">
-							<img
-								src="./img/about-me2.jpg"
-								alt="барбер делает кантик"
-								width="270"
-								height="445"
-							/>
+							<picture>
+								<source
+									srcset="./img/about-me2.jpg 1x, ./img/about-me2@x2.jpg 2x"
+									media="(min-width: 1280px)"
+								/>
+								<source
+									srcset="
+										./img/about-me2-tablet.jpg    1x,
+										./img/about-me2-tablet@x2.jpg 2x
+									"
+									media="(min-width: 768px)"
+								/>
+
+								<img
+									src="./img/about-me2-tablet.jpg"
+									alt="барбер делает кантик"
+								/>
+							</picture>
 						</li>
 					</ul>
 					<div class="about-info">

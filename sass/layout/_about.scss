@@ -14,22 +14,53 @@
 }
 
 .about__container {
-	// display: flex;
+	@include tablet {
+		display: flex;
+	}
 }
 
 .about__list {
 	display: none;
-	// display: flex;
-	// margin-right: 64px;
+
+	@include tablet {
+		display: block;
+		margin-right: 30px;
+	}
+
+	@include desktop {
+		display: flex;
+		margin-right: 64px;
+	}
 }
 
-// .about__item {
-// 	margin-right: 30px;
+.about__item {
+	@include tablet {
+		margin-bottom: 30px;
 
-// 	&:last-child {
-// 		margin-right: 0;
-// 	}
-// }
+		&:last-child {
+			margin-bottom: 0;
+		}
+	}
+
+	@include desktop {
+		margin: 0;
+		margin-right: 30px;
+
+		&:last-child {
+			margin-right: 0;
+		}
+	}
+}
+
+.about-info {
+	@include tablet {
+		max-width: 330px;
+	}
+
+	@include desktop {
+		min-width: 500px;
+	}
+}
 
 .about-info__pretitle {
 	margin-bottom: var(--repeat-margin);
