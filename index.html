@@ -255,7 +255,7 @@
 			</section>
 
 			<!-- masters -->
-			<!-- <section class="masters" id="masters">
+			<section class="masters" id="masters">
 				<div class="container masters__container">
 					<p class="pretitle masters__pretitle">
 						для настоящих ценителей атмосферы
@@ -266,11 +266,35 @@
 					<ul class="masters-wrap">
 						<li class="masters-card">
 							<div class="masters-card__wrap">
-								<img
-									src="./img/barber-master1.jpg"
-									alt="барбер делает кантик"
-									width="370"
-								/>
+								<picture>
+									<source
+										srcset="
+											./img/barber-master1.jpg    1x,
+											./img/barber-master1@x2.jpg 2x
+										"
+										media="(min-width: 1280px)"
+									/>
+									<source
+										srcset="
+											./img/barber-master1-tablet.jpg    1x,
+											./img/barber-master1-tablet@x2.jpg 2x
+										"
+										media="(min-width: 768px)"
+									/>
+
+									<source
+										srcset="
+											./img/barber-master1-mob.jpg    1x,
+											./img/barber-master1-mob@x2.jpg 2x
+										"
+										media="(min-width: 320px)"
+									/>
+
+									<img
+										src="./img/barber-master1-mob.jpg"
+										alt="барбер делает кантик"
+									/>
+								</picture>
 								<div class="masters-card__arise">
 									<p class="masters-card__about">
 										Ресурс предлагает комплексные предложения с разным уровнем
@@ -316,11 +340,36 @@
 						</li>
 						<li class="masters-card">
 							<div class="masters-card__wrap">
-								<img
-									src="./img/barber-master2.jpg"
-									alt="барбер стрижет волосы"
-									width="370"
-								/>
+								<picture>
+									<source
+										srcset="
+											./img/barber-master2.jpg    1x,
+											./img/barber-master2@x2.jpg 2x
+										"
+										media="(min-width: 1280px)"
+									/>
+									<source
+										srcset="
+											./img/barber-master2-tablet.jpg    1x,
+											./img/barber-master2-tablet@x2.jpg 2x
+										"
+										media="(min-width: 768px)"
+									/>
+
+									<source
+										srcset="
+											./img/barber-master2-mob.jpg    1x,
+											./img/barber-master2-mob@x2.jpg 2x
+										"
+										media="(min-width: 320px)"
+									/>
+
+									<img
+										src="./img/barber-master2-mob.jpg"
+										alt="барбер стрижет волосы"
+									/>
+								</picture>
+
 								<div class="masters-card__arise">
 									<p class="masters-card__about">
 										Ресурс предлагает комплексные предложения с разным уровнем
@@ -366,11 +415,36 @@
 						</li>
 						<li class="masters-card">
 							<div class="masters-card__wrap">
-								<img
-									src="./img/barber-master3.jpg"
-									alt="барбер стрижет чёлку"
-									width="370"
-								/>
+								<picture>
+									<source
+										srcset="
+											./img/barber-master3.jpg    1x,
+											./img/barber-master3@x2.jpg 2x
+										"
+										media="(min-width: 1280px)"
+									/>
+									<source
+										srcset="
+											./img/barber-master3-tablet.jpg    1x,
+											./img/barber-master3-tablet@x2.jpg 2x
+										"
+										media="(min-width: 768px)"
+									/>
+
+									<source
+										srcset="
+											./img/barber-master3-mob.jpg    1x,
+											./img/barber-master3-mob@x2.jpg 2x
+										"
+										media="(min-width: 320px)"
+									/>
+
+									<img
+										src="./img/barber-master3-mob.jpg"
+										alt="барбер стрижет чёлку"
+									/>
+								</picture>
+
 								<div class="masters-card__arise">
 									<p class="masters-card__about">
 										Ресурс предлагает комплексные предложения с разным уровнем
@@ -416,7 +490,7 @@
 						</li>
 					</ul>
 				</div>
-			</section> -->
+			</section>
 
 			<!-- portfolio -->
 			<section class="portfolio">

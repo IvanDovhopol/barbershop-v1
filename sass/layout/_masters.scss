@@ -1,7 +1,25 @@
 .masters {
-	padding-top: 130px;
-	padding-bottom: 130px;
+	padding-top: 84px;
+	padding-bottom: 84px;
 	background-color: #f7f7f7;
+
+	@include tablet {
+		padding-top: 100px;
+		padding-bottom: 100px;
+	}
+
+	@include desktop {
+		padding-top: 130px;
+		padding-bottom: 130px;
+	}
+}
+
+.masters__container {
+	@media screen and (min-width: 768px) and (max-width: 1279px) {
+		padding: 0;
+		padding-left: 159px;
+		padding-right: 159px;
+	}
 }
 
 .masters__pretitle {
@@ -14,15 +32,30 @@
 }
 
 .masters-wrap {
-	display: flex;
+	@include desktop {
+		display: flex;
+	}
 }
 
 .masters-card {
-	margin-right: 30px;
-	width: calc((100% - 60px) / 3);
+	margin-bottom: 64px;
 
 	&:last-child {
-		margin-right: 0;
+		margin-bottom: 0;
+	}
+
+	@include tablet {
+		width: 450px;
+	}
+
+	@include desktop {
+		margin-bottom: 0;
+		margin-right: 30px;
+		width: calc((100% - 60px) / 3);
+
+		&:last-child {
+			margin-right: 0;
+		}
 	}
 }
 
@@ -51,12 +84,20 @@
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);
-	width: 322px;
+	width: 100%;
 	min-height: 168px;
+	padding-left: 24px;
+	padding-right: 24px;
 
 	font-size: 18px;
 	line-height: 1.56;
 	color: #ffffff;
+
+	@media screen and (max-width: 386px) {
+		font-size: 14px;
+		padding-left: 15px;
+		padding-right: 15px;
+	}
 }
 
 .masters-card__name {
