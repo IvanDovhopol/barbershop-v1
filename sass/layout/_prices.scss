@@ -1,32 +1,90 @@
 .prices {
 	max-width: 1280px;
-	max-height: 718px;
 	background-color: #191c26;
-	background-image: url(../img/prices.png);
+	background-image: url(../img/prices-mob.png);
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: cover;
-	margin: 0 auto;
-	padding-top: 130px;
-	padding-bottom: 130px;
+	margin-left: auto;
+	margin-right: auto;
+	padding-top: 84px;
+	padding-bottom: 84px;
+
+	@include retina {
+		background-image: url(../img/prices-mob@x2.png);
+	}
+
+	@include tablet {
+		padding-top: 100px;
+		padding-bottom: 100px;
+		background-image: url(../img/prices-tablet.png);
+
+		@include retina {
+			background-image: url(../img/prices-tablet@x2.png);
+		}
+	}
+
+	@include desktop {
+		padding-top: 130px;
+		padding-bottom: 130px;
+		background-image: url(../img/prices.png);
+
+		@include retina {
+			background-image: url(../img/prices@x2.png);
+		}
+	}
+}
+
+.prices__container {
+	@media screen and (max-width: 429px) {
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+
+	max-width: 100%;
 }
 
 .prices__pretitle {
-	color: var(--top-text-secondary-color);
+	@media screen and (max-width: 429px) {
+		font-size: 10px;
+	}
+
 	margin-bottom: var(--repeat-margin);
+	color: var(--top-text-secondary-color);
 }
 
 .prices__title {
+	@media screen and (max-width: 429px) {
+		font-size: 34px;
+	}
+
 	font-size: 42px;
 	color: var(--title-secondary-color);
 	margin-bottom: 44px;
 }
 
 .prices__wrap {
-	display: flex;
+	display: none;
+	& + & {
+		display: block;
+		width: 100%;
+	}
+
+	@include desktop {
+		display: flex;
+		flex-wrap: wrap;
+
+		& + & {
+			display: none;
+		}
+	}
 }
 
 .prices-block {
+	@media screen and (max-width: 429px) {
+		padding: 15px 15px;
+	}
+
 	padding: 30px 40px;
 	flex-grow: 1;
 	background-image: linear-gradient(
@@ -35,12 +93,14 @@
 		rgba(23, 26, 36, 0.2) 100%
 	);
 
-	& + & {
-		background-image: linear-gradient(
-			180deg,
-			#090b13 0%,
-			rgba(9, 11, 19, 0.2) 100%
-		);
+	@include desktop {
+		& + & {
+			background-image: linear-gradient(
+				180deg,
+				#090b13 0%,
+				rgba(9, 11, 19, 0.2) 100%
+			);
+		}
 	}
 }
 
@@ -66,19 +126,29 @@
 
 .prices-block__name,
 .prices-block__sum {
-	font-size: 18px;
-	line-height: 1.66;
+	@media screen and (max-width: 429px) {
+		font-size: 12px;
+	}
+
+	font-size: 14px;
+	line-height: 2.14;
 	letter-spacing: 0.02em;
 	color: var(--price-text-color);
 
 	&:first-child {
 		order: -1;
 	}
+
+	@include tablet {
+		font-size: 18px;
+		line-height: 1.66;
+	}
 }
 
 .prices__btn {
 	display: block;
-	margin: 0 auto;
+	margin-left: auto;
+	margin-right: auto;
 	margin-top: 50px;
 
 	background-color: transparent;
