@@ -904,14 +904,28 @@ body {
   background-color: #191c26;
 }
 
-.connection__container {
-  display: flex;
+@media screen and (min-width: 1280px) {
+  .connection__container {
+    display: flex;
+  }
 }
 
 .online {
-  padding-top: 130px;
-  padding-bottom: 130px;
-  width: calc(50% + 15px);
+  padding-top: 84px;
+  padding-bottom: 84px;
+}
+@media screen and (min-width: 768px) {
+  .online {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .online {
+    padding-top: 130px;
+    padding-bottom: 130px;
+    width: calc(50% + 15px);
+  }
 }
 
 .online__title {
@@ -919,34 +933,43 @@ body {
   font-size: 42px;
   color: var(--title-secondary-color);
 }
+@media screen and (max-width: 405px) {
+  .online__title {
+    font-size: 31px;
+  }
+}
 
 /* form */
 .online-form {
   display: flex;
-  justify-content: space-between;
   flex-wrap: wrap;
-  padding-right: 40px;
+}
+@media screen and (min-width: 1280px) {
+  .online-form {
+    justify-content: space-between;
+    padding-right: 40px;
+  }
 }
 
 .online-form__field {
   position: relative;
-  width: 265px;
+  width: 100%;
   height: 24px;
   margin-bottom: 44px;
 }
-
-.online-form__input {
-  width: 100%;
-  height: 100%;
-  border: none;
-  outline: none;
-  border-bottom: 1px solid var(--online-text-color);
-  background-color: transparent;
-  color: #cac9c9;
-  transition: border-color var(--duration) var(--timing-function);
+@media screen and (min-width: 768px) {
+  .online-form__field {
+    width: 330px;
+    margin-right: 30px;
+  }
+  .online-form__field + .online-form__field {
+    margin-right: 0;
+  }
 }
-.online-form__input:focus {
-  border-color: #fff;
+@media screen and (min-width: 1280px) {
+  .online-form__field {
+    width: 265px;
+  }
 }
 
 .online-form__label {
@@ -966,11 +989,30 @@ body {
   color: #fff;
 }
 
+.online-form__input {
+  width: 100%;
+  height: 100%;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid var(--online-text-color);
+  background-color: transparent;
+  color: #cac9c9;
+  transition: border-color var(--duration) var(--timing-function);
+}
+.online-form__input:focus {
+  border-color: #fff;
+}
+
 .online-form__text-field {
   position: relative;
-  width: 560px;
+  width: 100%;
   height: 76px;
   margin-bottom: 44px;
+}
+@media screen and (min-width: 1280px) {
+  .online-form__text-field {
+    width: 560px;
+  }
 }
 
 .online-form__text {
@@ -993,9 +1035,16 @@ body {
   background-color: transparent;
   color: var(--button-text-primory-color);
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  margin-left: auto;
+  margin-right: auto;
 }
 .online-form__btn:hover, .online-form__btn:focus {
   background-color: var(--accent-color);
+}
+@media screen and (min-width: 768px) {
+  .online-form__btn {
+    margin: 0;
+  }
 }
 
 .contacts {
