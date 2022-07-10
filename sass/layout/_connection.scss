@@ -1,9 +1,16 @@
 .connection {
-	background-color: #191c26;
+	// background-color: #191c26;
 }
 
 .connection__container {
+	background-color: #191c26;
+	margin-left: auto;
+	margin-right: auto;
+
 	@include desktop {
 		display: flex;
+		max-width: 1280px;
+		padding-left: 55px;
+		padding-right: 55px;
 	}
 }
