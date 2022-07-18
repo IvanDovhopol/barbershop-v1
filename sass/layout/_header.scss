@@ -13,9 +13,23 @@
 .page-header__logo {
 	margin-right: 70px;
 	transition: fill var(--duration) var(--timing-function);
+	fill: #ffffff;
 
-	&:hover {
+	&:hover,
+	&:focus {
 		fill: var(--light-accent);
+	}
+
+	@include tablet {
+		fill: var(--color-icons);
+	}
+}
+
+.nav {
+	display: none;
+
+	@include tablet {
+		display: block;
 	}
 }
 
@@ -48,7 +62,12 @@
 }
 
 .online-entry {
-	margin-left: auto;
+	display: none;
+
+	@include tablet {
+		display: block;
+		margin-left: auto;
+	}
 }
 
 .online-entry__btn {
