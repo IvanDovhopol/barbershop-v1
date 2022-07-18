@@ -1,19 +1,19 @@
 .container {
-	max-width: 480px;
-	margin-left: auto;
-	margin-right: auto;
-	padding-left: 31px;
-	padding-right: 31px;
+  max-width: 480px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 31px;
+  padding-right: 31px;
 
-	@include tablet {
-		max-width: 768px;
-		padding-left: 39px;
-		padding-right: 39px;
-	}
+  @include tablet {
+    max-width: 768px;
+    padding-left: 39px;
+    padding-right: 39px;
+  }
 
-	@include desktop {
-		max-width: 1280px;
-		padding-left: 55px;
-		padding-right: 55px;
-	}
+  @include desktop {
+    max-width: 1280px;
+    padding-left: 55px;
+    padding-right: 55px;
+  }
 }
